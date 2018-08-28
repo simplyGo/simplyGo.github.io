@@ -1,0 +1,53 @@
+.socials {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.socials__item {
+  margin: 5px 0;
+}
+
+.socials__link {
+  display: block;
+  // padding: 5px;
+
+  width: 18px;
+  height: 18px;
+
+  font-size: 0;
+
+  background: url('../img/sprite.png') no-repeat;
+  background-clip: content-box;
+  background-color: @white;
+  border: 2px solid @socialsBorder;
+  border-radius: 50%;
+}
+
+.socials__link:hover {
+  opacity: 0.5;
+}
+
+.socials__link:active {
+  opacity: 0.3;
+}
+
+.socials__link--fb {
+  background-position: 2px -123px;
+}
+
+.socials__link--tw {
+  background-position: -32px -123px;
+}
+
+.socials__link--gplus {
+  background-position: -51px -123px;
+}
+
+.socials__link--li {
+  background-position: -71px -123px;
+}
+
+.socials__link--insta {
+  background-position: -14px -123px;
+}

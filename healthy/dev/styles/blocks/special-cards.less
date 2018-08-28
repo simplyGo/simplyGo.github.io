@@ -1,0 +1,73 @@
+.special-cards {
+  font-family: 'Roboto', sans-serif;
+  overflow: hidden;
+}
+
+.special-cards__control {
+  display: none;
+}
+
+.special-cards__list {
+  position: relative;
+  display: flex;
+  padding-bottom: 150px;
+
+  transition: all 0.5s;
+}
+
+.special-cards__item {
+  flex-shrink: 0;
+  display: block;
+  margin-right: 30px;
+  // width: 570px;
+}
+
+.special-cards__slider {
+  display: flex;
+  justify-content: space-between;
+
+  margin: 0 auto;
+  width: 90px;
+}
+
+.special-cards__slide-control {
+  width: 24px;
+
+  font-size: 12px;
+  font-weight: @fontBold;
+  line-height: 24px;
+  color: @grayReadMore;
+  text-align: center;
+  vertical-align: middle;
+
+  background-color: @white;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#special-cards__slide1:checked ~ .special-cards__list {
+  left: 0;
+}
+
+#special-cards__slide2:checked ~ .special-cards__list {
+  left: -1200px;
+}
+
+#special-cards__slide3:checked ~ .special-cards__list {
+  left: -2400px;
+}
+
+#special-cards__slide1:checked ~ .special-cards__slider .special-cards__slide-control:nth-child(1) {
+  color: @white;
+  background-color: @lightGreen;
+}
+
+#special-cards__slide2:checked ~ .special-cards__slider .special-cards__slide-control:nth-child(2) {
+  color: @white;
+  background-color: @lightGreen;
+}
+
+#special-cards__slide3:checked ~ .special-cards__slider .special-cards__slide-control:nth-child(3) {
+  color: @white;
+  background-color: @lightGreen;
+}

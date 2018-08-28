@@ -1,0 +1,50 @@
+.service {
+  position: relative;
+
+  padding-top: 80px;
+}
+
+.service::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+
+  display: block;
+  margin-left: -30px;
+  width: 60px;
+  height: 49px;
+
+  background: url('../img/sprite.png') no-repeat;
+}
+
+.service:nth-child(1)::before {
+  background-position: 0 0;
+}
+
+.service:nth-child(2)::before {
+  background-position: -60px 0;
+}
+
+.service:nth-child(3)::before {
+  background-position: -120px 0;
+}
+
+.service__name {
+  display: block;
+  margin: 0;
+  margin-bottom: 25px;
+
+  font-size: 30px;
+  color: @gray;
+  text-align: center;
+}
+
+.service__descr {
+  margin: 0;
+
+  font-size: 16px;
+  line-height: 30px;
+  color: @lightGray;
+  text-align: center;
+}

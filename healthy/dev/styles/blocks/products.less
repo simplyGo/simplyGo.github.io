@@ -1,0 +1,64 @@
+.products {
+  position: relative;
+
+  font-family: 'Roboto', sans-serif;
+}
+
+.products__decor-logo {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  display: block;
+  margin-left: -98px;
+  width: 196px;
+  height: 130px;
+
+  background: url('../img/decor-logo.png') no-repeat;
+  background-size: cover;
+}
+
+.products__headline {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 70px;
+
+  width: 140px;
+
+  font-size: 15px;
+  font-weight: @fontRegular;
+  line-height: 20px;
+  color: @grayHeadline;
+  text-align: center;
+}
+
+.products__headline b {
+  font-weight: @fontBold;
+}
+
+.products__main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.products__slider {
+  margin-right: 30px;
+}
+
+.products__special {
+  display: flex;
+  justify-content: center;
+}
+
+.products__banner {
+  flex-shrink: 0;
+  margin-right: 30px;
+  width: 570px;
+  box-sizing: border-box;
+
+  background-color: @lightGreen;
+  border-radius: 15px;
+}
+
+.products__banner:last-of-type {
+  margin: 0;
+}

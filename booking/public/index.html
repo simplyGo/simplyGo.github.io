@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Airbooking</title>
+    <link rel='stylesheet' href='css/style.css'>
+    <link href="https://fonts.googleapis.com/css?family=Gilda+Display" rel="stylesheet">
+</head>
+<body>
+  <header class='page-header container'>
+    <nav class='page-header__nav-bar nav-bar'>
+      <input id='nav-bar__toggle' class='nav-bar__toggle--input' type='checkbox'>
+      <label for='nav-bar__toggle' class='nav-bar__toggle'>Open menu</label>
+      <h1 class='nav-bar__logo logo'>Airbooking</h1>
+      <div class='nav-bar__search search'>
+        <label class='search__toggle'>
+          <input class='search__toggle--input' type='checkbox'>
+        </label>
+        <input class='search__input' type='text'>
+      </div>
+      <div class='nav-bar__nav-list main-nav'>
+        <label class='main-nav__item'>
+          <a href='' class='main-nav__link'>Link</a>
+        </label>
+        <label class='main-nav__item'>
+          <a href='' class='main-nav__link'>Link</a>
+        </label>
+        <label class='main-nav__item'>
+          <a href='' class='main-nav__link'>Link</a>
+        </label>
+        <label class='main-nav__item'>
+          <a href='' class='main-nav__link'>Link</a>
+        </label>
+        <label class='main-nav__item'>
+          <a href='' class='main-nav__link'>Link</a>
+        </label>
+        <label class='main-nav__item'>
+          <a href='' class='main-nav__link'>Link</a>
+        </label>
+      </div>
+    </nav>
+    <aside class='page-header__socials'>
+      <ul class='socials default-list'>
+        <li class='socials__item'>
+          <a href='#' class='socials__link socials__link--fb'>facebook</a>
+        </li>
+        <li class='socials__item'>
+          <a href='#' class='socials__link socials__link--tw'>twitter</a>
+        </li>
+        <li class='socials__item'>
+          <a href='#' class='socials__link socials__link--in'>linkedin</a>
+        </li>
+        <li class='socials__item'>
+          <a href='#' class='socials__link socials__link--insta'>instagram</a>
+        </li>
+      </ul>
+    </aside>
+    <section class='page-header__welcome welcome'>
+      <div class='welcome__background'></div>
+      <div class='welcome__wrapper'>
+        <b class='welcome__headline'>A Brand New Hotel Beyond Ordinary</b>
+        <a class='welcome__explore button button--explore' href='#rooms'>Explore it</a>
+        <form class='welcome__form bookin-form'>
+          <div class='bookin-form__select form-select'>
+            <span class='form-select__name'>Check in</span>
+            <input class='form-select__number' type='number' min='1' max='31' placeholder='1'>
+            <select class='form-select__type form-select__type--month'>
+              <option>January</option>
+              <option>February</option>
+              <option>March</option>
+              <option>April</option>
+              <option>May</option>
+              <option>June</option>
+              <option>July</option>
+              <option>August</option>
+              <option>September</option>
+              <option>October</option>
+              <option>November</option>
+              <option>December</option>
+            </select>
+          </div>
+          <div class='bookin-form__select form-select'>
+            <span class='form-select__name'>Check out</span>
+            <input class='form-select__number' type='number' min='1' max='31' placeholder='15'>
+            <select class='form-select__type form-select__type--month'>
+              <option>January</option>
+              <option>February</option>
+              <option>March</option>
+              <option>April</option>
+              <option>May</option>
+              <option>June</option>
+              <option>July</option>
+              <option>August</option>
+              <option>September</option>
+              <option>October</option>
+              <option>November</option>
+              <option>December</option>
+            </select>
+          </div>
+          <div class='bookin-form__select form-select'>
+            <span class='form-select__name'>Guests</span>
+            <input id='select-guests-show' class='form-select__number' type='number' min='1' max='6' placeholder='1'>
+            <select id='select-guests-select' class='form-select__type form-select__type--guests'>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+            </select>
+          </div>
+          <button class='bookin-form__button button button--submit' type='submit'>Check availability</button>
+        </form>
+      </div>
+    </section>
+  </header>
+  <main class='page-main'>
+    <section class='page-main__rooms rooms container' id='rooms'>
+      <h2 class='rooms__headline'>Our rooms</h2>
+      <ul class='rooms__cards default-list'>
+        <li class='rooms__card-item rooms-card'>
+          <div class='rooms-card__background'></div>
+          <a href='#' class='rooms-card__name'>Family room</a>
+          <span class='rooms-card__price'>from 30$</span>
+        </li>
+        <li class='rooms__card-item rooms-card'>
+          <div class='rooms-card__background'></div>
+          <a href='#' class='rooms-card__name'>Family room</a>
+          <span class='rooms-card__price'>from 30$</span>
+        </li>
+        <li class='rooms__card-item rooms-card'>
+          <div class='rooms-card__background'></div>
+          <a href='#' class='rooms-card__name'>Family room</a>
+          <span class='rooms-card__price'>from 30$</span>
+        </li>
+        <li class='rooms__card-item rooms-card'>
+          <div class='rooms-card__background'></div>
+          <a href='#' class='rooms-card__name'>Family room</a>
+          <span class='rooms-card__price'>from 30$</span>
+        </li>
+        <li class='rooms__card-item rooms-card'>
+          <div class='rooms-card__background'></div>
+          <a href='#' class='rooms-card__name'>Family room</a>
+          <span class='rooms-card__price'>from 30$</span>
+        </li>
+        <li class='rooms__card-item rooms-card'>
+          <div class='rooms-card__background'></div>
+          <a href='#' class='rooms-card__name'>Family room</a>
+          <span class='rooms-card__price'>from 30$</span>
+        </li>
+      </ul>
+    </section>
+    <section class='page-mian__promo promo'>
+      <div class='promo__wrapper'>
+        <img class='promo__image'>
+        <section class='promo__info'>
+          <h2 class='promo__headline'>Explorer Your Best Room</h2>
+          <p class='promo__text'>
+            Phasellus enim libero, blandit vel sapien vitae,
+            condimentum ultricies magna et. Quisque euismod orci ut et lobortis. Quisque euismod orci ut et lobortis.
+            Phasellus enim libero, blandit vel sapien vitae, condimentum
+            ultricies magna et. Quisque euismod orci ut et lobortis. Quisque euismod orci ut et lobortis.
+            Phasellus enim libero.</p>
+      </div>
+      </section>
+    </section>
+    <section class='page-main__services services container'>
+      <h2 class='services__headline'>Our services</h2>
+      <ul class='services__list default-list'>
+        <li class='services__item service'>
+          <b class='service__name'>Restaurant</b>
+          <p class='service__descr'>
+            Phasellus enim libero,
+            blandit vel sapien vitae, condimentum ultricies
+            magna et. Quisque euismod orci ut et lobortis. Quisque euismod orci ut et lobortis.
+          </p>
+        </li>
+        <li class='services__item service'>
+          <b class='service__name'>Sports Club</b>
+          <p class='service__descr'>
+            Phasellus enim libero,
+            blandit vel sapien vitae, condimentum ultricies
+            magna et. Quisque euismod orci ut et lobortis. Quisque euismod orci ut et lobortis.
+          </p>
+        </li>
+        <li class='services__item service'>
+          <b class='service__name'>Pick up</b>
+          <p class='service__descr'>
+            Phasellus enim libero,
+            blandit vel sapien vitae, condimentum ultricies
+            magna et. Quisque euismod orci ut et lobortis. Quisque euismod orci ut et lobortis.
+          </p>
+        </li>
+      </ul>
+    </section>
+    <article class='page-main__article article'>
+      <img class='article__image'>
+      <div class='article__info'>
+        <h2 class='article__headline'>Find Your Best Room Here</h2>
+        <p class='article__text'>
+          Sed ut perspiciatis unde omnis iste natus error sit
+          voluptatem accusantium doloremque laudantium, totam
+          rem aperiam, eaque ipsa quae ab illo inventore veritatis
+          et quasi architecto beatae vitae dicta sunt explicabo.
+          Nemo enim ipsam voluptatem quia voluptas sit aspernatur
+          aut odit aut fugit, sed quia consequuntur magni dolores
+          eos qui ratione voluptatem sequi nesciunt.
+        </p>
+        <p class='article__text'>
+          Neque porro quisquam est, qui dolorem ipsum
+          quia dolor sit amet, consectetur, adipisci
+          velit, sed quia non numquam eius modi tempora
+          incidunt ut labore et dolore magnam aliquam.
+        </p>
+        <a href='#' class='article__link button--link'>Read more</a>
+      </div>
+    </article>
+    <section class='page-main__feedback feedback container'>
+      <h2 class='feedback__headline'>From The Guest</h2>
+      <div class='feedback__comment comment'>
+        <div class='comment__author author'>
+          <div class='author__photo'></div>
+          <div class='author__info'>
+            <b class='author__name'>Andrew Strauss</b>
+            <i class='author__location'>From New York, USA</i>
+          </div>
+        </div>
+        <p class='comment__text'>
+          Sed ut perspiciatis unde omnis iste natus
+          error sit voluptatem accusantium doloremque
+          laudantium, totam rem aperiam, eaque ipsa
+          quae ab illo inventore veritatis et quasi
+          architecto beatae vitae dicta sunt explicabo.
+          Nemo enim ipsam voluptatem quia voluptas sit
+          aspernatur aut odit aut fugit, sed quia consequuntur
+          magni dolores eos qui ratione voluptatem
+          sequi nesciunt.
+        </p>
+      </div>
+    </section>
+    <section class='page-main__promo-video promo-video container'>
+      <div class='promo-video__preview'></div>
+      <p class='promo-video__intro'>
+        Keep Clam And
+        Enjoy Vaction
+      </p>
+      <button class='promo-video__button button button--play' type='button'>Play</button>
+    </section>
+    <section class='page-main__news news container'>
+      <h2 class='news__headline'>Latest News</h2>
+      <ul class='news__list default-list'>
+        <li class='news__item news-card'>
+          <div class='news-card__image'></div>
+          <div class='news-card__descr'>
+            <h3 class='news-card__headline'>This is a slider post</h3>
+            <span class='news-card__date'>June 18, 2018</span>
+            <p class='news-card__text'>
+              Phasellus enim libero, blandit
+              vel sapien vitae, condimentum ultricies
+              magna et. Quisque euismod orci ut et lobortis. Quisque euismod orci ut et lobortis.
+            </p>
+            <a href='#' class='news-card__link button--link'>Read more</a>
+          </div>
+        </li>
+        <li class='news__item news-card'>
+          <div class='news-card__image'></div>
+          <div class='news-card__descr'>
+            <h3 class='news-card__headline'>This is a slider post</h3>
+            <span class='news-card__date'>June 18, 2018</span>
+            <p class='news-card__text'>
+              Phasellus enim libero, blandit
+              vel sapien vitae, condimentum ultricies
+              magna et. Quisque euismod orci ut et lobortis. Quisque euismod orci ut et lobortis.
+            </p>
+            <a href='#' class='news-card__link button--link'>Read more</a>
+          </div>
+        </li>
+        <li class='news__item news-card'>
+          <div class='news-card__image'></div>
+          <div class='news-card__descr'>
+            <h3 class='news-card__headline'>This is a slider post</h3>
+            <span class='news-card__date'>June 18, 2018</span>
+            <p class='news-card__text'>
+              Phasellus enim libero, blandit
+              vel sapien vitae, condimentum ultricies
+              magna et. Quisque euismod orci ut et lobortis. Quisque euismod orci ut et lobortis.
+            </p>
+            <a href='#' class='news-card__link button--link'>Read more</a>
+          </div>
+        </li>
+        <li class='news__item news-card'>
+          <div class='news-card__image'></div>
+          <div class='news-card__descr'>
+            <h3 class='news-card__headline'>This is a slider post</h3>
+            <span class='news-card__date'>June 18, 2018</span>
+            <p class='news-card__text'>
+              Phasellus enim libero, blandit
+              vel sapien vitae, condimentum ultricies
+              magna et. Quisque euismod orci ut et lobortis. Quisque euismod orci ut et lobortis.
+            </p>
+            <a href='#' class='news-card__link button--link'>Read more</a>
+          </div>
+        </li>
+        <li class='news__item news-card'>
+          <div class='news-card__image'></div>
+          <div class='news-card__descr'>
+            <h3 class='news-card__headline'>This is a slider post</h3>
+            <span class='news-card__date'>June 18, 2018</span>
+            <p class='news-card__text'>
+              Phasellus enim libero, blandit
+              vel sapien vitae, condimentum ultricies
+              magna et. Quisque euismod orci ut et lobortis. Quisque euismod orci ut et lobortis.
+            </p>
+            <a href='#' class='news-card__link button--link'>Read more</a>
+          </div>
+        </li>
+        <li class='news__item news-card'>
+          <div class='news-card__image'></div>
+          <div class='news-card__descr'>
+            <h3 class='news-card__headline'>This is a slider post</h3>
+            <span class='news-card__date'>June 18, 2018</span>
+            <p class='news-card__text'>
+              Phasellus enim libero, blandit
+              vel sapien vitae, condimentum ultricies
+              magna et. Quisque euismod orci ut et lobortis. Quisque euismod orci ut et lobortis.
+            </p>
+            <a href='#' class='news-card__link button--link'>Read more</a>
+          </div>
+        </li>
+      </ul>
+    </section>
+  </main>
+  <footer class='page-footer'>
+    <div class='page-footer__wrapper'>
+      <section class='page-footer__contacts contacts'>
+        <b class='contacts__headline'>Airbooking</b>
+        <p class='contacts__text'>
+          Lorem ipsum dolor sit amet, conser adipiscing elit.
+          In consectetur tincidunt dolor.
+        </p>
+        <ul class='contacts__list default-list'>
+          <li class='contacts__item contacts__item--address'>
+            <p class='contacts__info'>
+              2345  Lyon Avenue<br>
+              Boston, MA, Massachusetts
+            </p>
+          </li>
+          <li class='contacts__item contacts__item--phone'>
+            <p class='contacts__info'>
+              508-960-5584<br>
+              857-366-4240
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section class='page-footer__links quick-links'>
+        <h2 class='quick-links__headline'>Quick links</h2>
+        <ul class='quick-links__list default-list'>
+          <li class='quick-links__item'>
+            <a href='#' class='quick-links__link'>Accomodation</a>
+          </li>
+          <li class='quick-links__item'>
+            <a href='#' class='quick-links__link'>Noordwijk</a>
+          </li>
+          <li class='quick-links__item'>
+            <a href='#' class='quick-links__link'>Food & Drinks</a>
+          </li>
+          <li class='quick-links__item'>
+            <a href='#' class='quick-links__link'>Wellness</a>
+          </li>
+          <li class='quick-links__item'>
+            <a href='#' class='quick-links__link'>Beach</a>
+          </li>
+          <li class='quick-links__item'>
+            <a href='#' class='quick-links__link'>Venues</a>
+          </li>
+        </ul>
+      </section>
+      <section class='page-footer__socials'>
+        <h2 class='socials--footer__headline'>Connect With Us</h2>
+        <ul class='socials--footer default-list'>
+          <li class='socials__item'>
+            <a href='#' class='socials__link socials__link--fb'>facebookb</a>
+          </li>
+          <li class='socials__item'>
+            <a href='#' class='socials__link socials__link--tw'>twitter</a>
+          </li>
+          <li class='socials__item'>
+            <a href='#' class='socials__link socials__link--in'>linkedin</a>
+          </li>
+          <li class='socials__item'>
+            <a href='#' class='socials__link socials__link--youtube'>youtube</a>
+          </li>
+          <li class='socials__item'>
+            <a href='#' class='socials__link socials__link--insta'>instagram</a>
+          </li>
+        </ul>
+      </section>
+      <span class='page-footer__copyright'>© 2018 Airbooking - All Rights Reserved</span>
+    </div>
+  </footer>
+  <script src='js/script.js'></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+.cart {
+  display: flex;
+  align-items: center;
+
+  margin: 0 40px;
+
+  font-family: 'Roboto', sans-serif;
+  font-weight: @fontMedium;
+}
+
+.cart__link,
+.cart__sum {
+  display: block;
+}
+
+.cart__link {
+  position: relative;
+  margin-right: 20px;
+  width: 29px;
+  height: 26px;
+
+  font-size: 0;
+  background: url('../img/sprite.png') no-repeat;
+  background-position: -39px -5px;
+}
+
+.cart__count {
+  position: absolute;
+  top: -12px;
+  right: -12px;
+  display: block;
+  width: 20px;
+
+  font-size: 12px;
+  line-height: 20px;
+  color: @white;
+  text-align: center;
+  vertical-align: middle;
+
+  background-color: @green;
+  border: 2px solid @white;
+  border-radius: 50%;
+}
+
+.cart__sum {
+  font-size: 15px;
+  color: @black;
+}

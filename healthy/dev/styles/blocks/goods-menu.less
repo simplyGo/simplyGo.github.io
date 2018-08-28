@@ -1,0 +1,79 @@
+.goods-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.goods-menu__item {
+  font-family: 'Roboto', sans-serif;
+}
+
+.goods-menu__logo {
+  position: relative;
+  order: 3;
+  // margin: 0 60px; // только на 1600 и выше версиях
+}
+
+.goods-menu__logo::before {
+  content: '';
+  position: absolute;
+  top: -85px;
+  left: 50%;
+
+  display: block;
+  margin-left: -64px;
+  width: 128px;
+  height: 85px;
+
+  background: url('../img/decor-logo.png') no-repeat;
+  background-size: cover;
+}
+
+.goods-menu__item:nth-child(2) {
+  order: 1;
+}
+
+.goods-menu__item:nth-child(3) {
+  order: 2;
+}
+
+.goods-menu__item:nth-child(4) {
+  order: 4;
+}
+
+.goods-menu__item:nth-child(5) {
+  order: 5;
+}
+
+.goods-menu__button {
+  font-size: 16px;
+  font-weight: @fontRegular;
+}
+
+.goods-menu__button b {
+  font-weight: @fontBlack;
+}
+
+.goods-menu--expand .goods-menu__item:nth-child(1) {
+  order: 1;
+}
+
+.goods-menu--expand .goods-menu__item:nth-child(2) {
+  order: 2;
+}
+
+.goods-menu--expand .goods-menu__item:nth-child(3) {
+  order: 3;
+}
+
+.goods-menu--expand .goods-menu__item:nth-child(4) {
+  order: 4;
+}
+
+.goods-menu--expand .goods-menu__item:nth-child(5) {
+  order: 5;
+}
+
+.goods-menu--expand .goods-menu__item:nth-child(6) {
+  order: 6;
+}

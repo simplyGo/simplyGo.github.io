@@ -1,0 +1,26 @@
+.container {
+  margin: 0 auto;
+  width: 90%;
+}
+
+.container--fixed {
+  padding: 0 15px;
+}
+
+@media (min-width: @tabs_width) {
+  .container--fixed {
+    padding: 0 35px;
+  }
+}
+
+@media (min-width: @desktop_width) {
+  .container {
+    margin: 0 95px;
+
+    width: auto;
+  }
+
+  .container--fixed {
+    padding: 0 95px;
+  }
+}

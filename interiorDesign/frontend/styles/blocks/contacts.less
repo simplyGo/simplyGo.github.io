@@ -1,0 +1,256 @@
+.contacts {
+  position: relative;
+  padding-top: 90px;
+  padding-bottom: 100px;
+
+  background-color: @darkBlue;
+}
+
+.contacts__color-env {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  background: url('../img/contacts.jpg') no-repeat;
+  background-size: cover;
+  opacity: 0.1;
+}
+
+.contacts__decoration-image {
+  display: none;
+}
+
+.contacts__headline {
+  margin: 0;
+  margin-bottom: 30px;
+
+  font-size: 45px;
+  color: @whiteText;
+  text-align: center;
+}
+
+.contacts__headline br {
+  display: none;
+}
+
+.contacts__description {
+  margin: 0 auto;
+  max-width: 500px;
+
+  font-size: 18px;
+  line-height: 24px;
+  color: @whiteText;
+  text-align: center;
+}
+
+.contacts__input-wrapper {
+  margin: 45px auto;
+
+  width: 100%;
+  max-width: 475px;
+}
+
+.contacts__input {
+  display: block;
+  margin: 0 auto;
+  padding: 15px 5px;
+
+  width: 100%;
+  box-sizing: border-box;
+
+  font-size: 18px;
+  font-weight: 300;
+  color: @whiteText08;
+
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid rgba(@formFawnR, @formFawnG, @formFawnB, @opacity__70);
+  outline: none;
+}
+
+.contacts__input::placeholder {
+  font-size: 18px;
+  font-weight: @fontWeightLight;
+  color: @whiteText08;
+}
+
+.contacts__submit {
+  margin: 0 auto;
+  margin-top: 60px;
+  margin-bottom: 20px;
+
+  width: 100%;
+  max-width: 475px;
+  height: 70px;
+  font-size: 18px;
+  font-weight: @fontWeightXtraBold;
+  line-height: 70px;
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle;
+
+  background-color: @orange;
+  border-radius: 5px;
+}
+
+.contacts__caution {
+  margin: 0 auto;
+  padding: 0 5px;
+  max-width: 475px;
+
+  font-size: 16px;
+  font-weight: @fontWeightLight;
+  color: @whiteText;
+  text-align: center;
+  opacity: @opacity__70;
+
+  cursor: default;
+}
+
+@media (min-width: @tabs_width) {
+  .contacts {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .contacts__headline br {
+    display: block;
+  }
+
+  .contacts__description {
+    margin: 0 auto;
+
+    font-size: 22px;
+  }
+
+  .contacts__form {
+    margin-top: 50px;
+  }
+
+  .contacts__input-wrapper {
+    position: relative;
+
+    margin: 35px auto;
+    width: 475px;
+  }
+
+  .contacts__input {
+    padding: 10px 0;
+    padding-right: 30px;
+
+    width: 100%;
+  }
+
+  .contacts__input-image {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    display: block;
+    width: 22px;
+    height: 20px;
+
+    background-image: url('../img/sprite.png');
+    background-repeat: no-repeat;
+  }
+
+  .contacts__input-image--name {
+    background-position: 0px 0px;
+  }
+
+  .contacts__input-image--tel {
+    background-position: 0px -20px;
+  }
+
+  .contacts__input-image--email {
+    background-position: 0px -40px;
+  }
+
+  .contacts__caution {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: @desktop_width) {
+  .contacts {
+    display: flex;
+    padding: 0;
+  }
+
+  .contacts__color-env {
+    display: none;
+  }
+
+  .contacts__decoration-image {
+    display: block;
+    width: 50%;
+
+    background: url('../img/contacts.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .contacts__wrapper {
+    padding: 80px 95px;
+    width: 50%;
+    box-sizing: border-box;
+  }
+
+  .contacts__headline {
+    margin-left: 10px;
+
+    width: 480px;
+    text-align: left;
+  }
+
+  .contacts__headline br {
+    display: none;
+  }
+
+  .contacts__description {
+    margin: 0;
+    margin-left: 10px;
+    width: 450px;
+
+    font-size: 15px;
+    text-align: left;
+  }
+
+  .contacts__form {
+    margin-top: 35px;
+    margin-left: 10px;
+  }
+
+  .contacts__input-wrapper {
+    margin: 30px 0;
+
+    width: 100%;
+  }
+
+  .contacts__submit {
+    margin: 0;
+    margin-top: 45px;
+    margin-bottom: 25px;
+    width: 100%;
+    box-sizing: border-box;
+
+    font-size: 15px;
+    line-height: 65px;
+
+    background-color: transparent;
+    border: 2px solid @whiteText;
+  }
+
+  .contacts__caution {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+
+    font-size: 14px;
+    text-align: left;
+  }
+}

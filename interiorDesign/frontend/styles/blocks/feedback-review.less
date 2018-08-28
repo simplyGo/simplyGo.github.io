@@ -1,0 +1,90 @@
+.feedback-review {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.feedback-review__image {
+  position: absolute;
+  top: -40px;
+  left: 50%;
+
+  display: block;
+  margin-left: -108px;
+
+  width: 216px;
+  height: 195px;
+
+  background-color: @orange;
+}
+
+.feedback-review__reviewer-name {
+  display: block;
+  margin: 10px 0;
+  margin-top: 200px;
+
+  font-size: 24px;
+  font-weight: @fontWeightBold;
+  line-height: 30px;
+  color: @stepsHead;
+  text-align: center;
+}
+
+.feedback-review__service-used {
+  display: block;
+  margin-bottom: 25px;
+
+  font-size: 18px;
+  font-weight: @fontWeightBold;
+  font-style: normal;
+  color: @orange;
+  text-align: center;
+}
+
+.feedback-review__comment {
+  margin-bottom: 55px;
+  padding: 0 15px;
+  width: 100%;
+  box-sizing: border-box;
+
+  font-size: 20px;
+  font-weight: @fontWeightNormal;
+  line-height: 30px;
+  color: @stepsText;
+  text-align: center;
+}
+
+@media (min-width: @tabs_width) {
+  .feedback-review {
+    flex-direction: row;
+
+    margin-top: 55px;
+    width: 90%;
+  }
+
+  .feedback-review__image {
+    top: 40px;
+    left: auto;
+    right: -80px;
+
+    margin: 0;
+    width: 190px;
+    height: 195px;
+  }
+
+  .feedback-review__comment-form {
+    padding: 40px 60px;
+    padding-right: 110px;
+    width: auto;
+  }
+
+  .feedback-review__reviewer-name,
+  .feedback-review__service-used,
+  .feedback-review__comment {
+    margin: 15px 0;
+    padding: 0;
+    padding-right: 30px;
+
+    text-align: left;
+  }
+}

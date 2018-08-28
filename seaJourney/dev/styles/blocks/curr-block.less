@@ -1,0 +1,79 @@
+.curr-block {
+  position: relative;
+  font-family: 'Raleway', sans-serif;
+}
+
+.curr-block__list {
+  position: absolute;
+  width: 100%;
+}
+
+.curr-block__item:hover {
+  opacity: 0.5;
+}
+
+.curr-block__button {
+  position: relative;
+  display: none;
+
+  padding-left: 15px;
+  font-size: 14px;
+  font-weight: @fontRegular;
+
+  user-select: none;
+  cursor: pointer;
+}
+
+.curr-block__button--all::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  display: block;
+  margin-top: -7px;
+  width: 10px;
+  height: 12px;
+
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  font-weight: @fontBold;
+  color: @blue;
+}
+
+.curr-block__item--rub .curr-block__button--all::before {
+  margin-top: -6px;
+  background: url('../img/sprite.png') no-repeat;
+  background-position: -15px -23px;
+}
+
+.curr-block__item--dollar .curr-block__button--all::before {
+  content: '$';
+}
+
+.curr-block__item--euro .curr-block__button--all::before {
+  content: '€';
+}
+
+#curr-all:checked ~ .curr-block .curr-block__button--this,
+
+#curr-rub:checked ~ .curr-block .curr-block__item--rub .curr-block__button--all,
+#curr-dollar:checked ~ .curr-block .curr-block__item--dollar .curr-block__button--all,
+#curr-euro:checked ~ .curr-block .curr-block__item--euro .curr-block__button--all {
+  display: block;
+}
+
+#curr-all:checked ~ .curr-block .curr-block__list {
+  color: @white;
+  background-color: @blue;
+  box-shadow: 0 3px 5px 0 @darkBlue;
+}
+
+#curr-all:checked ~ .curr-block .curr-block__item {
+  padding: 5px;
+
+  border-bottom: 1px solid @darkBlue;
+}
+
+#curr-all:checked ~ .curr-block .curr-block__button--this {
+  padding: 0;
+}

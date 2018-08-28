@@ -1,0 +1,114 @@
+.main-nav {
+  position: relative;
+  user-select: none; // not allow user to select menu names
+}
+
+.main-nav__color-env {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: @darkBlue;
+
+  opacity: 0;
+}
+
+.main-nav__list {
+  flex-shrink: 0;
+  width: 100%;
+
+  margin: 0;
+  padding: 0;
+  padding-top: 30px;
+
+  text-align: center;
+  text-transform: uppercase;
+  list-style: none;
+
+}
+
+.main-nav__item:hover {
+  background-color: @orange;
+}
+
+.main-nav__link {
+  display: block;
+  width: 100%;
+
+  font-size: 20px;
+  font-weight: @fontWeightSemiBold;
+  line-height: 60px;
+  vertical-align: middle;
+  text-decoration: none;
+  color: @whiteText;
+}
+
+.main-nav__item--active {
+  cursor: default;
+}
+
+.main-nav__item--active > .main-nav__link {
+  color: @orange;
+}
+
+.main-nav__item--active:hover {
+  background-color: @darkBlue;
+}
+
+.main-nav__social {
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 80px;
+
+  width: 220px;
+}
+
+@media (min-width: @tabs_width) {
+  .main-nav__link {
+    font-size: 35px;
+    line-height: 100px;
+  }
+
+  .main-nav__social {
+    margin-top: 90px;
+    margin-bottom: 175px;
+    width: 320px;
+  }
+}
+
+@media (min-width: @desktop_width) {
+  .main-nav {
+    position: static;
+  }
+
+  .main-nav__color-env {
+    display: none;
+  }
+
+  .main-nav__list {
+    display: none;
+    position: absolute;
+
+    top: 85px;
+    z-index: 10;
+
+    margin: 0;
+    padding: 0 105px;
+    width: 100%;
+    height: 642px;
+    box-sizing: border-box;
+
+    background-clip: content-box;
+    background-color: @darkBlue;
+  }
+
+  .main-nav__link {
+    line-height: 107px;
+  }
+
+  .main-nav__social {
+    margin: 35px 0;
+    margin-left: 105px;
+
+    width: 115px;
+  }
+}

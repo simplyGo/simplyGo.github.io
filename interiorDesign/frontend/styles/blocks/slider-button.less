@@ -1,0 +1,63 @@
+.slider-button {
+  top: 0;
+  z-index: 10;
+
+  width: 50%;
+  height: 100%;
+
+  background-color: @blue;
+  opacity: 0.05;
+}
+
+.slider-button--left {
+  left: 0;
+}
+
+.slider-button--right {
+  right: 0;
+}
+
+@media (min-width: @desktop_width) {
+  .slider-button {
+    width: 10%;
+
+    background-color: transparent;
+    transition: all 0.5s;
+    opacity: 0.5;
+  }
+
+  .slider-button:hover {
+    opacity: 1;
+  }
+
+  .slider-button--left::before,
+  .slider-button--right::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 10;
+
+    display: block;
+    margin-top: -20px;
+    margin-left: -20px;
+
+    width: 40px;
+    height: 40px;
+    box-sizing: border-box;
+
+    border: 5px solid @whiteText;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+
+    opacity: 1;
+  }
+
+  .slider-button--left::before {
+    transform: rotate(-45deg);
+  }
+
+  .slider-button--right::before {
+    transform: rotate(135deg);
+  }
+}

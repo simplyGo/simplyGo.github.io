@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Дизайн интерьеров</title>
+    <link rel='stylesheet' href='css/style.css'>
+</head>
+<body>
+  <header class='main-header'>
+    <div class='main-header__color-env'>
+      <input id='main-nav-toggle' class='main-control__input' type='checkbox'>
+      <div class='main-nav__color-env'></div>
+      <div class='main-header__control main-control'>
+        <a href='#' class='main-control__logo'>
+          <img class='main-control__logo-image'
+            srcset='
+              img/logoMobile.png 40w,
+              img/logoTablet.png 89w,
+              img/logoDesktop.png 62w'
+
+            sizes='
+              (max-width: 767px) 40px,
+              (max-width: 1359px) 89px,
+              62px'
+
+            src='img/logoTablet.png'>
+        </a>
+        <span class='main-control__contacts'>+7 (800) 823  48 88</span>
+        <div class='main-control__button '>
+          <label for='main-nav-toggle' class='button button--nav' type='button'>
+            Menu Button
+          </label>
+        </div>
+      </div>
+      <nav class='main-header__nav main-nav'>
+        <ul class='main-nav__list'>
+          <li class='main-nav__item'>
+            <a href='#' class='main-nav__link'>Главная</a>
+          </li>
+          <li class='main-nav__item main-nav__item--active'>
+            <a href='#' class='main-nav__link'>Преимущества</a>
+          </li>
+          <li class='main-nav__item'>
+            <a href='#' class='main-nav__link'>Портфолио</a>
+          </li>
+          <li class='main-nav__item'>
+            <a href='#' class='main-nav__link'>Наши услуги</a>
+          </li>
+          <li class='main-nav__item'>
+            <a href='#' class='main-nav__link'>Отзыв</a>
+          </li>
+          <li class='main-nav__item'>
+            <a href='#' class='main-nav__link'>Контакты</a>
+          </li>
+        </ul>
+        <div class='main-nav__social social social--header social__wrapper'>
+          <a href='#' class='social__link social__link--vk'>VK</a>
+          <a href='#' class='social__link social__link--insta'>INSTA</a>
+          <a href='#' class='social__link social__link--fb'>FB</a>
+        </div>
+      </nav>
+      <div class='main-header__wrapper container--fixed'>
+        <input id='main-slider__slide--1' class='main-slider__input' type='radio' name='main-slider' checked>
+        <input id='main-slider__slide--2' class='main-slider__input' type='radio' name='main-slider'>
+        <input id='main-slider__slide--3' class='main-slider__input' type='radio' name='main-slider'>
+        <input id='main-slider__slide--4' class='main-slider__input' type='radio' name='main-slider'>
+        <section class='main-header__order main-order'>
+          <div class='main-order__wrapper'>
+            <h1 class='main-order__headline'>Дизайн интерьеров</h1>
+            <p class='main-order__description'>Воплотим в жизнь интерьер,
+              который будет радовать лаконичностью и уютом.</p>
+            <a href='#' class='main-order__button button button--submit'>ЗАКАЗАТЬ ДИЗАЙН</a>
+          </div>
+        </section>
+        <section class='main-header__slider main-slider'>
+          <ul class='main-slider__list'>
+            <li class='main-slider__slide'>
+              <div class='main-slider__slide-image main-slider__slide-image--1'></div>
+            </li>
+            <li class='main-slider__slide'>
+              <div class='main-slider__slide-image main-slider__slide-image--2'></div>
+            </li>
+            <li class='main-slider__slide'>
+              <div class='main-slider__slide-image main-slider__slide-image--3'></div>
+            </li>
+            <li class='main-slider__slide'>
+              <div class='main-slider__slide-image main-slider__slide-image--4'></div>
+            </li>
+          </ul>
+        </section>
+        <div class='main-slider__nav'>
+          <label for='main-slider__slide--1' class='main-slider__button'>Slide1</label>
+          <label for='main-slider__slide--2' class='main-slider__button'>Slide2</label>
+          <label for='main-slider__slide--3' class='main-slider__button'>Slide3</label>
+          <label for='main-slider__slide--4' class='main-slider__button'>Slide4</label>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class='main'>
+    <section class='main__features features'>
+      <ul class='features__list'>
+        <li class='features__item'>
+          <i class='features__number'>01</i>
+          <b class='features__slogan'>Берем весь ремонт на себя</b>
+          <p class='features__description'>
+            Заботы по дизайну и отделке
+            помещения возьмем на себя, останется дождаться завершения
+            работ и наслаждаться результатом</p>
+        </li>
+        <li class='features__item'>
+          <i class='features__number'>02</i>
+          <b class='features__slogan'>Мы - профессионалы своего дела</b>
+          <p class='features__description'>
+            Наши дизайнеры постоянно повышают квалификацию, посещеют курсы и тренинги,
+            а студия уже реализовала свыше 1000 дизайн-проектов
+          </p>
+        </li>
+        <li class='features__item'>
+          <i class='features__number'>03</i>
+          <b class='features__slogan'>Наши проекты индивидуальны</b>
+          <p class='features__description'>
+            Каждый, созданный студией, интерьер - индивидуальное
+            и максимально продуманное решение для каждого вида помещения
+          </p>
+        </li>
+        <li class='features__item'>
+          <i class='features__number'>04</i>
+          <b class='features__slogan'>Работаем на выгодных условиях</b>
+          <p class='features__description'>
+            Ценовая политика студии очень лояльна,  мы осуществляем контроль всего процесса работы
+            и получаем результат который делает клиентов счастивыми
+          </p>
+        </li>
+      </ul>
+    </section>
+    <section class='main__portfolio portfolio'>
+      <input id='portfolio-nav__show-all-types' class='portfolio-nav__control' type='radio' name='portfolio-nav' checked>
+      <input id='portfolio-nav__show-interior' class='portfolio-nav__control' type='radio' name='portfolio-nav'>
+      <input id='portfolio-nav__show-decoration' class='portfolio-nav__control' type='radio' name='portfolio-nav'>
+      <div class='portfolio__head container'>
+        <h2 class='portfolio__headline'>Портфолио</h2>
+        <ul class='portfolio__nav portfolio-nav'>
+          <li class='portfolio-nav__item'>
+            <label for='portfolio-nav__show-all-types' class='portfolio-nav__category portfolio-nav__category--all-types'>Все проекты</label>
+          </li>
+          <li class='portfolio-nav__item'>
+            <label for='portfolio-nav__show-interior' class='portfolio-nav__category portfolio-nav__category--interior'>Дизайн интерьеров</label>
+          </li>
+          <li class='portfolio-nav__item'>
+            <label for='portfolio-nav__show-decoration' class='portfolio-nav__category portfolio-nav__category--decoration'>Отделочные работы</label>
+          </li>
+        </ul>
+      </div>
+      <article class='portfolio__slider portfolio-slider'>
+        <ul class='portfolio-slider__slider'>
+          <li class='portfolio-slider__slide portfolio-slider__type--interior'>
+            <div class='portfolio-slider__color-env'>
+              <span class='portfolio-slider__image'></span>
+            </div>
+            <a href='#' class='portfolio-slider__more-button'>more</a>
+            <p class='portfolio-slider__caption'>Дизайн интерьера гостиной</p>
+            <p class='portfolio-slider__type'>Дизайн интерьера</p>
+          </li>
+          <li class='portfolio-slider__slide portfolio-slider__type--interior portfolio-slider__slide--active'>
+            <div class='portfolio-slider__color-env'>
+              <span class='portfolio-slider__image'></span>
+            </div>
+            <a href='#' class='portfolio-slider__more-button'>more</a>
+            <p class='portfolio-slider__caption'>Дизайн интерьера гостиной</p>
+            <p class='portfolio-slider__type'>Дизайн интерьера</p>
+          </li>
+          <li class='portfolio-slider__slide portfolio-slider__type--decoration'>
+            <div class='portfolio-slider__color-env'>
+              <span class='portfolio-slider__image'></span>
+            </div>
+            <a href='#' class='portfolio-slider__more-button'>more</a>
+            <p class='portfolio-slider__caption'>Лофт интерьера</p>
+            <p class='portfolio-slider__type'>Отделочные работы</p>
+          </li>
+          <li class='portfolio-slider__slide portfolio-slider__type--interior'>
+            <div class='portfolio-slider__color-env'>
+              <span class='portfolio-slider__image'></span>
+            </div>
+            <a href='#' class='portfolio-slider__more-button'>more</a>
+            <p class='portfolio-slider__caption'>Дизайн интерьера гостиной</p>
+            <p class='portfolio-slider__type'>Дизайн интерьера</p>
+          </li>
+          <li class='portfolio-slider__slide portfolio-slider__type--decoration'>
+            <div class='portfolio-slider__color-env'>
+              <span class='portfolio-slider__image'></span>
+            </div>
+            <a href='#' class='portfolio-slider__more-button'>more</a>
+            <p class='portfolio-slider__caption'>Лофт интерьера</p>
+            <p class='portfolio-slider__type'>Отделочные работы</p>
+          </li>
+          <li class='portfolio-slider__slide portfolio-slider__type--decoration'>
+            <div class='portfolio-slider__color-env'>
+              <span class='portfolio-slider__image'></span>
+            </div>
+            <a href='#' class='portfolio-slider__more-button'>more</a>
+            <p class='portfolio-slider__caption'>Лофт интерьера</p>
+            <p class='portfolio-slider__type'>Отделочные работы</p>
+          </li>
+          <li class='portfolio-slider__slide portfolio-slider__type--interior'>
+            <div class='portfolio-slider__color-env'>
+              <span class='portfolio-slider__image'></span>
+            </div>
+            <a href='#' class='portfolio-slider__more-button'>more</a>
+            <p class='portfolio-slider__caption'>Дизайн интерьера гостиной</p>
+            <p class='portfolio-slider__type'>Дизайн интерьера</p>
+          </li>
+          <li class='portfolio-slider__slide portfolio-slider__type--decoration'>
+            <div class='portfolio-slider__color-env'>
+              <span class='portfolio-slider__image'></span>
+            </div>
+            <a href='#' class='portfolio-slider__more-button'>more</a>
+            <p class='portfolio-slider__caption'>Лофт интерьера</p>
+            <p class='portfolio-slider__type'>Отделочные работы</p>
+          </li>
+          <li class='portfolio-slider__slide portfolio-slider__type--interior'>
+            <div class='portfolio-slider__color-env'>
+              <span class='portfolio-slider__image'></span>
+            </div>
+            <a href='#' class='portfolio-slider__more-button'>more</a>
+            <p class='portfolio-slider__caption'>Дизайн интерьера гостиной</p>
+            <p class='portfolio-slider__type'>Дизайн интерьера</p>
+          </li>
+          <li class='portfolio-slider__slide portfolio-slider__type--decoration'>
+            <div class='portfolio-slider__color-env'>
+              <span class='portfolio-slider__image'></span>
+            </div>
+            <a href='#' class='portfolio-slider__more-button'>more</a>
+            <p class='portfolio-slider__caption'>Лофт интерьера</p>
+            <p class='portfolio-slider__type'>Отделочные работы</p>
+          </li>
+          <li class='portfolio-slider__slide portfolio-slider__type--interior'>
+            <div class='portfolio-slider__color-env'>
+              <span class='portfolio-slider__image'></span>
+            </div>
+            <a href='#' class='portfolio-slider__more-button'>more</a>
+            <p class='portfolio-slider__caption'>Дизайн интерьера гостиной</p>
+            <p class='portfolio-slider__type'>Дизайн интерьера</p>
+          </li>
+          <li class='portfolio-slider__slide portfolio-slider__type--decoration'>
+            <div class='portfolio-slider__color-env'>
+              <span class='portfolio-slider__image'></span>
+            </div>
+            <a href='#' class='portfolio-slider__more-button'>more</a>
+            <p class='portfolio-slider__caption'>Лофт интерьера</p>
+            <p class='portfolio-slider__type'>Отделочные работы</p>
+          </li>
+          <li class='portfolio-slider__slide portfolio-slider__type--interior'>
+            <div class='portfolio-slider__color-env'>
+              <span class='portfolio-slider__image'></span>
+            </div>
+            <a href='#' class='portfolio-slider__more-button'>more</a>
+            <p class='portfolio-slider__caption'>Дизайн интерьера гостиной</p>
+            <p class='portfolio-slider__type'>Дизайн интерьера</p>
+          </li>
+        </ul>
+        <button class='portfolio-slider__button button slider-button slider-button--left' type='button'></button>
+        <button class='portfolio-slider__button button slider-button slider-button--right' type='button'></button>
+      </article>
+    </section>
+    <section class='main__services services'>
+      <input id='service1' class='services__slider-control' type='radio' name='services-slider'>
+      <input id='service2' class='services__slider-control' type='radio' name='services-slider'>
+      <input id='service3' class='services__slider-control' type='radio' name='services-slider' checked>
+      <input id='service4' class='services__slider-control' type='radio' name='services-slider'>
+      <input id='service5' class='services__slider-control' type='radio' name='services-slider'>
+      <input id='service6' class='services__slider-control' type='radio' name='services-slider'>
+      <div class='services__nav container'>
+        <h2 class='services__headline'>Наши услуги</h2>
+        <nav class='services__list'>
+            <label for='service1' class='services__link'>Дизайн жилого помещения</label>
+            <label for='service2' class='services__link'>Дизайн отельных комнат</label>
+            <label for='service3' class='services__link'>Дизайн коммерческих объектов</label>
+            <label for='service4' class='services__link'>Ремонт под ключ</label>
+            <label for='service5' class='services__link'>Отделочные работы</label>
+            <label for='service6' class='services__link'>Выезд дизайнера на дом</label>
+        </nav>
+      </div>
+      <div class='services__service-block service-block'>
+        <div class='service-block__wrapper'>
+          <article class='service-block__item service-block__item--living'>
+            <div class='service-block__image'></div>
+            <div class='service-block__info'>
+              <h2 class='service-block__headline'>Дизайн жилого помещения</h2>
+              <p class='service-block__description'>
+                Работая с коммерческими объектами, студия изучает целевую аудиторию,
+                создает коммерческие интерьеры такими, Работая с коммерческими объектами, студия изучает целевую аудиторию,
+                создает коммерческие интерье? чтобы посетители Работая с коммерческими объектами, студия изучает целевую аудиторию,
+                создает коммерческие интерьеры такими, чтобы посетители кафе,
+                бара, гостиницы хотели возвращаться в интерьер снова и снова кафе,
+                бара, гостиницы хотели возвращаться в интерьер снова и снова
+              </p>
+              <span class='service-block__projects-counter'>532 проекта</span>
+            </div>
+            <a class='service-block__consult' href='#'>Консультация</a>
+          </article>
+          <article class='service-block__item service-block__item--rooms'>
+            <div class='service-block__image'></div>
+            <div class='service-block__info'>
+              <h2 class='service-block__headline'>Дизайн отельных комнат</h2>
+              <p class='service-block__description'>
+                Работая с коммерческими объектами, Работая с коммерческими объектами, студия изучает целевую аудиторию,
+                создает коммерческие интерьеры такими, чтобы посетители кафе,
+                бара, гостиницы хотели возвращаться в интерьер снова и снова студия изучает целевую аудиторию,
+                создает коммерческие интерьеры такими, чтобы посетители кафе,
+                бара, гостиницы хотели возвращаться в интерьер снова и снова
+              </p>
+              <span class='service-block__projects-counter'>331 проект</span>
+            </div>
+            <a class='service-block__consult' href='#'>Консультация</a>
+          </article>
+          <article class='service-block__item service-block__item--commercy'>
+            <div class='service-block__image'></div>
+            <div class='service-block__info'>
+              <h2 class='service-block__headline'>Дизайн коммерческих
+                объектов</h2>
+              <p class='service-block__description'>
+                Работая с коммерческими объектами, студия изучает целевую аудиторию,
+                создает коммерческие интерьеры такими, чтобы посетители кафе,
+                бара, гостиницы хотели возвращаться в интерьер снова и снова
+              </p>
+              <span class='service-block__projects-counter'>162 проекта</span>
+            </div>
+            <a class='service-block__consult' href='#'>Консультация</a>
+          </article>
+          <article class='service-block__item service-block__item--private'>
+            <div class='service-block__image'></div>
+            <div class='service-block__info'>
+              <h2 class='service-block__headline'>Ремонт под ключ</h2>
+              <p class='service-block__description'>
+                Работая с коммерческими объектами, студия изучает целевую аудиторию,
+                создает коммерческие интерьеры такими, чтобы посетители кафе,
+                создает коммерческие интерьеры такими, чтобы посетители кафе,
+                создает коммерческие интерьеры такими, чтобы посетители кафе,
+                бара, гостиницы хотели возвращаться в интерьер снова и снова
+              </p>
+              <span class='service-block__projects-counter'>132 проекта</span>
+            </div>
+            <a class='service-block__consult' href='#'>Консультация</a>
+          </article>
+          <article class='service-block__item service-block__item--decoration'>
+            <div class='service-block__image'></div>
+            <div class='service-block__info'>
+              <h2 class='service-block__headline'>Отделочные работы</h2>
+              <p class='service-block__description'>
+                Работая с коммерческими объектами, студия создает коммерческие
+                интерьеры такими, чтобы посетители кафе, изучает целевую аудиторию,
+                создает коммерческие интерьеры такими, чтобы посетители кафе,
+                бара, гостиницы хотели возвращаться в интерьер снова и снова
+              </p>
+              <span class='service-block__projects-counter'>182 проекта</span>
+            </div>
+            <a class='service-block__consult' href='#'>Консультация</a>
+          </article>
+          <article class='service-block__item service-block__item--designer'>
+            <div class='service-block__image'></div>
+            <div class='service-block__info'>
+              <h2 class='service-block__headline'>Выезд дизайнера на дом</h2>
+              <p class='service-block__description'>
+                Работая с коммерческими объектами, студия изучает целевую аудиторию,
+                создает коммерческие интерьеры такими, чтобы посетители кафе,
+                бара, гостиницы хотели возвращаться в интерьер снова и снова
+              </p>
+              <span class='service-block__projects-counter'>222 проекта</span>
+            </div>
+            <a class='service-block__consult' href='#'>Консультация</a>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class='main__promo-video promo-video'>
+      <div class='promo-video__background'></div>
+      <button class='promo-video__button button button--play'></button>
+      <p class='promo-video__description'>
+        О  студии дизайна интерьеров BRUME за 2 минуты
+      </p>
+    </section>
+    <section class='main__work-steps work-steps container'>
+      <h2 class='work-steps__main-headline'>Этапы  работы</h2>
+      <ul class='work-steps__list'>
+        <li class='work-steps__item'>
+          <span class='work-steps__number'>1</span>
+          <div class='work-steps__text-wrapper'>
+            <h3 class='work-steps__headline'>Консультация</h3>
+            <p class='work-steps__description'>
+              Обсуждаем задачи и пожелания, предлагаем варианты дизайна интерьера,
+              оговариваем сроки реализации.
+            </p>
+          </div>
+        </li>
+        <li class='work-steps__item'>
+          <span class='work-steps__number'>2</span>
+          <div class='work-steps__text-wrapper'>
+            <h3 class='work-steps__headline'>Техническое задание</h3>
+            <p class='work-steps__description'>
+              Составляем техническое задание. Заключаем договор,
+              в котором прописываем все этапы проекта.
+            </p>
+          </div>
+        </li>
+        <li class='work-steps__item'>
+          <span class='work-steps__number'>3</span>
+          <div class='work-steps__text-wrapper'>
+            <h3 class='work-steps__headline'>Замеры и планировка</h3>
+            <p class='work-steps__description'>
+              Фиксируем размеры стен, окон, плинтусов, дверных проемов
+              для эффективной работы
+            </p>
+          </div>
+        </li>
+        <li class='work-steps__item'>
+          <span class='work-steps__number'>4</span>
+          <div class='work-steps__text-wrapper'>
+            <h3 class='work-steps__headline'>Дизайн-концепция</h3>
+            <p class='work-steps__description'>
+              Создаем концепцию на основе пожеланий клиента, его образов
+              и ощущений. Подбираем мебель.
+            </p>
+          </div>
+        </li>
+        <li class='work-steps__item'>
+          <span class='work-steps__number'>5</span>
+          <div class='work-steps__text-wrapper'>
+            <h3 class='work-steps__headline'>3D Визуализация</h3>
+            <p class='work-steps__description'>
+              Создаем 3d визуализацию, собираем пакет чертежей
+              соответствующий строительным нормам.
+            </p>
+          </div>
+        </li>
+        <li class='work-steps__item'>
+          <span class='work-steps__number'>6</span>
+          <div class='work-steps__text-wrapper'>
+            <h3 class='work-steps__headline'>Комплектация интерьера</h3>
+            <p class='work-steps__description'>
+              Подбираем мебель, отделочные материалы, светильники и текстиль.
+              Декорируем интерьер.
+            </p>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <section class='main__contacts contacts container--fixed'>
+      <div class='contacts__color-env'></div>
+      <div class='contacts__wrapper'>
+        <h2 class='contacts__headline'>Мечтаете<br> об интерьере от BRUME?</h2>
+        <p class='contacts__description'>Оставьте контактные данные, менеджер свяжется с вами
+          в течении 15 минут, для уточнения всех деталей.</p>
+        <form class='contacts__form'>
+          <div class='contacts__input-wrapper'>
+            <input class='contacts__input constacts__input--name' type='text' name='name' placeholder='Имя*'>
+            <span class='contacts__input-image contacts__input-image--name'></span>
+          </div>
+          <div class='contacts__input-wrapper'>
+            <input class='contacts__input constacts__input--tel' type='tel' name='tel' placeholder='Телефон*'>
+            <span class='contacts__input-image contacts__input-image--tel'></span>
+          </div>
+          <div class='contacts__input-wrapper'>
+            <input class='contacts__input constacts__input--email' type='email' name='email' placeholder='Email*'>
+            <span class='contacts__input-image contacts__input-image--email'></span>
+          </div>
+          <button class='contacts__submit button' type='submit'>Отправить</button>
+          <p class='contacts__caution'>Нажимая на кнопку, вы соглашаетесь с условиями обработки персональных данных</p>
+        </form>
+      </div>
+      <div class='contacts__decoration-image'></div>
+    </section>
+    <section class='main__feedback feedback'>
+      <h2 class='feedback__headline'>Отзывы  наших  клиентов</h2>
+      <input id='feedback-slide--1' class='feedback-slider__input' type='radio' name='review-slider'>
+      <input id='feedback-slide--2' class='feedback-slider__input' type='radio' name='review-slider' checked>
+      <input id='feedback-slide--3' class='feedback-slider__input' type='radio' name='review-slider'>
+      <input id='feedback-slide--4' class='feedback-slider__input' type='radio' name='review-slider'>
+      <div class='feedback__wrapper'>
+        <ul class='feedback__list'>
+          <li class='feedback__item'>
+            <article class='feedback__review feedback-review'>
+              <img src='img/av1.jpg' class='feedback-review__image'>
+              <div class='feedback-review__comment-form'>
+                <b class='feedback-review__reviewer-name'>Александра Холодная</b>
+                <i class='feedback-review__service-used'>Услуга: интерьер детской</i>
+                <p class='feedback-review__comment'>
+                  Спасибо студии за замечательный интерьер для моей 4-х летней дочки!
+                  Работа прошла быстро и легко, команда выполнила все точно в срок, сделали все как  мы и хотели.
+                  В следующий раз обратимся к BRUME!</p>
+              </div>
+            </article>
+          </li>
+          <li class='feedback__item'>
+            <article class='feedback__review feedback-review'>
+              <img src='img/avaMain.jpg' class='feedback-review__image'>
+              <div class='feedback-review__comment-form'>
+                <b class='feedback-review__reviewer-name'>Виктория Холодная</b>
+                <i class='feedback-review__service-used'>Услуга: интерьер детской</i>
+                <p class='feedback-review__comment'>
+                  Спасибо студии за замечательный интерьер для моей 4-х летней дочки!
+                  Работа прошла быстро и легко, команда выполнила все точно в срок, сделали все как  мы и хотели.
+                  В следующий раз обратимся к BRUME!</p>
+              </div>
+            </article>
+          </li>
+          <li class='feedback__item'>
+            <article class='feedback__review feedback-review'>
+              <img src='img/av2.jpg' class='feedback-review__image'>
+              <div class='feedback-review__comment-form'>
+                <b class='feedback-review__reviewer-name'>Евгений Холодный</b>
+                <i class='feedback-review__service-used'>Услуга: интерьер детской</i>
+                <p class='feedback-review__comment'>
+                  Спасибо студии за замечательный интерьер для моей 4-х летней дочки!
+                  Работа прошла быстро и легко, команда выполнила все точно в срок, сделали все как  мы и хотели.
+                  В следующий раз обратимся к BRUME!</p>
+              </div>
+            </article>
+          </li>
+          <li class='feedback__item'>
+            <article class='feedback__review feedback-review'>
+              <img src='img/avaMain.jpg' class='feedback-review__image'>
+              <div class='feedback-review__comment-form'>
+                <b class='feedback-review__reviewer-name'>Александр Здоровый</b>
+                <i class='feedback-review__service-used'>Услуга: интерьер детской</i>
+                <p class='feedback-review__comment'>
+                  Спасибо студии за замечательный интерьер для моей 4-х летней дочки!
+                  Работа прошла быстро и легко, команда выполнила все точно в срок, сделали все как  мы и хотели.
+                  В следующий раз обратимся к BRUME!</p>
+              </div>
+            </article>
+          </li>
+        </ul>
+      </div>
+      <div class='feedback__slider feedback-slider'>
+        <label for='feedback-slide--1' class='feedback-slider__button feedback-slider__button--slide1'>slide1</label>
+        <label for='feedback-slide--2' class='feedback-slider__button feedback-slider__button--slide2'>slide2</label>
+        <label for='feedback-slide--3' class='feedback-slider__button feedback-slider__button--slide3'>slide3</label>
+        <label for='feedback-slide--4' class='feedback-slider__button feedback-slider__button--slide4'>slide4</label>
+      </div>
+      <div class='feedback__prev-next'>
+        <button class='feedback__slider-prev' type='button'>
+          <span class='feedback__slider-decor feedback__slider-decor--prev'>prev</span>
+        </button>
+        <button class='feedback__slider-next' type='button'>
+          <span class='feedback__slider-decor feedback__slider-decor--next'>next</span>
+        </button>
+      </div>
+    </section>
+  </main>
+  <footer class='main-footer'>
+    <div class='main-footer__wrapper'>
+      <span class='main-footer__copyright'>BRUME interior, 2017 ©</span>
+      <div class='main-footer__social social social--footer'>
+        <a href='#' class='social__logo'>
+          <img src='img/logoFooter.png' class='social__logo-image'>
+        </a>
+        <div class='social__wrapper'>
+          <a href='#' class='social__link social__link--vk'>VK</a>
+          <a href='#' class='social__link social__link--insta'>INSTA</a>
+          <a href='#' class='social__link social__link--fb'>FB</a>
+        </div>
+      </div>
+      <a class='main-footer__designed' href='#'>HolodnayaDesign</a>
+    </div>
+  </footer>
+  <script src='js/script.js'></script>
+</body>
+</html>

@@ -1,0 +1,171 @@
+.service-block {
+  overflow: hidden;
+}
+
+.service-block__item {
+  display: none;
+  width: 100%;
+}
+
+.service-block__image {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 30px;
+
+  width: 100%;
+  height: 390px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.service-block__item--living .service-block__image {
+  background-image: url('../img/header.jpg');
+}
+
+.service-block__item--rooms .service-block__image {
+  background-image: url('../img/promo.jpg');
+}
+
+.service-block__item--commercy .service-block__image {
+  background-image: url('../img/servicesSlide.jpg');
+}
+
+.service-block__item--private .service-block__image {
+  background-image: url('../img/header.jpg');
+}
+
+.service-block__item--decoration .service-block__image {
+  background-image: url('../img/promo.jpg');
+}
+
+.service-block__item--designer .service-block__image {
+  background-image: url('../img/servicesSlide.jpg');
+}
+
+.service-block__info {
+  margin: 0 15px;
+  margin-bottom: 55px;
+}
+
+.service-block__headline {
+  display: none;
+}
+
+.service-block__description {
+  margin: 0;
+
+  font-size: 20px;
+  font-weight: @fontWeightLight;
+  line-height: 30px;
+  color: @stepsText;
+}
+
+.service-block__projects-counter {
+  display: none;
+}
+
+.service-block__consult {
+  display: block;
+  margin: 0 auto;
+  width: 215px;
+  height: 55px;
+  box-sizing: border-box;
+
+  font-size: 15px;
+  font-weight: @fontWeightXtraBold;
+  line-height: 55px;
+  text-align: center;
+  vertical-align: middle;
+  color: @headText;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  border: 2px solid @headText;
+}
+
+@media (min-width: @tabs_width) {
+  .service-block__image {
+    margin-bottom: 65px;
+
+    background-position: center;
+  }
+
+  .service-block__info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    margin: 0 35px;
+    margin-bottom: 40px;
+  }
+
+  .service-block__headline {
+    order: 0;
+    display: block;
+    margin: 0;
+    margin-bottom: 25px;
+    width: 65%;
+
+    font-size: 30px;
+    font-weight: @fontWeightNormal;
+    color: @headText;
+  }
+
+  .service-block__description {
+    order: 2;
+    width: 65%;
+
+    font-size: 18px;
+  }
+
+  .service-block__projects-counter {
+    order: 1;
+    display: block;
+
+    font-size: 22px;
+    font-weight: @fontWeightNormal;
+    line-height: 30px;
+    color: @blue;
+  }
+
+  .service-block__consult {
+    margin: 0 35px;
+
+    width: 345px;
+    height: 70px;
+
+    font-size: 18px;
+    line-height: 70px;
+  }
+}
+
+
+@media (min-width: @desktop_width) {
+  .service-block__item {
+    position: relative;
+  }
+
+  .service-block__image {
+    margin-bottom: 60px;
+  }
+
+  .service-block__info {
+    margin: 0;
+  }
+
+  .service-block__consult {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    margin: 0;
+
+    width: 220px;
+    height: 55px;
+
+    font-size: 15px;
+    line-height: 55px;
+  }
+}

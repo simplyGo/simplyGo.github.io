@@ -1,0 +1,58 @@
+.button {
+  display: block;
+
+  border: none;
+  outline: none;
+
+  font-family: 'Raleway', sans-serif;
+  color: @white;
+  text-decoration: none;
+
+  background-color: @buttonBG;
+  cursor: pointer;
+}
+
+.button:hover {
+  opacity: 0.5;
+}
+
+.button:active {
+  opacity: 0.3;
+}
+
+.button--main {
+  width: 200px;
+  height: 45px;
+
+  font-size: 14px;
+  font-weight: @fontRegular;
+  line-height: 45px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.button--load-more {
+  // padding-right: 25px;
+  width: 200px;
+  height: 45px;
+  box-sizing: border-box;
+
+  font-size: 14px;
+  font-weight: @fontRegular;
+  line-height: 45px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.button--load-more::after {
+  content: '';
+  display: inline-block;
+  margin-left: 15px;
+
+  vertical-align: middle;
+
+  border: 5px solid @white;
+  border-bottom-width: 0;
+  border-left-color: transparent;
+  border-right-color: transparent;
+}

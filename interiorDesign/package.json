@@ -1,0 +1,38 @@
+{
+  "name": "interiordesign",
+  "version": "1.0.0",
+  "description": "layout",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/simplyGo/interiorDesign.git",
+    "gulp": "./node_modules/.bin/gulp"
+  },
+  "keywords": [
+    "layout",
+    "design",
+    "html",
+    "css"
+  ],
+  "author": "Cardinal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/simplyGo/interiorDesign/issues"
+  },
+  "homepage": "https://github.com/simplyGo/interiorDesign#readme",
+  "devDependencies": {
+    "browser-sync": "^2.24.6",
+    "del": "^3.0.0",
+    "gulp": "github:gulpjs/gulp",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-debug": "^4.0.0",
+    "gulp-if": "^2.0.2",
+    "gulp-less": "^4.0.1",
+    "gulp-newer": "^1.4.0",
+    "gulp-notify": "^3.2.0",
+    "gulp-sourcemaps": "^2.6.4",
+    "multipipe": "^2.0.3"
+  }
+}

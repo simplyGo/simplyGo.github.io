@@ -1,0 +1,58 @@
+.header-slider {
+  display: flex;
+  align-items: center;
+
+  height: 35px;
+}
+
+.header-slider__pages {
+  margin-right: 25px;
+}
+
+.header-slider__page {
+  font-family: 'Roboto', sans-serif;
+}
+
+.header-slider__page--cur {
+  font-size: 25px;
+  font-weight: @fontBlack;
+  color: @greenText;
+  vertical-align: middle;
+}
+
+.header-slider__page--all {
+  font-size: 13px;
+  font-weight: @fontMedium;
+  color: @black;
+  vertical-align: top;
+}
+
+.header-slider__buttons {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 70px;
+  height: 20px;
+
+  background-color: @white;
+  border-radius: 50px;
+}
+
+.header-slider__buttons::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 35px;
+
+  display: block;
+  width: 1px;
+
+  background-color: @gray;
+}
+
+.header-slider__button {
+  margin: 0 1px;
+}

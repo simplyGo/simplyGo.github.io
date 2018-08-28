@@ -1,0 +1,53 @@
+.article {
+  position: relative;
+  display: flex;
+}
+
+.article__image {
+  display: block;
+
+  width: 100%;
+
+  background: url('../img/header.jpg') no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.article__info {
+  padding: 0 80px;
+  padding-top: 120px;
+  padding-bottom: 165px;
+
+  width: 42%;
+  min-width: 590px;
+  height: 100%;
+  box-sizing: border-box;
+
+  background-color: @blue;
+}
+
+.article__headline {
+  margin-bottom: 75px;
+
+  font-family: 'Gilda Display', serif;
+  font-size: 90px;
+  color: @white;
+}
+
+.article__text {
+  margin-bottom: 50px;
+
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  color: @white;
+}
+
+.article__link {
+  width: 215px;
+
+  font-size: 24px;
+  line-height: 65px;
+  color: @gray;
+  background-color: @white;
+}

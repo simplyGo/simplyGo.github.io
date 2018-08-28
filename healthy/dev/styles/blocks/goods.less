@@ -1,0 +1,274 @@
+.goods {
+  overflow: hidden;
+}
+
+.goods__controls {
+  display: none;
+}
+
+.goods__menu {
+  margin: 0 auto;
+  margin-bottom: 55px;
+
+  max-width: 1170px;
+}
+
+.goods__cards {
+  position: relative;
+  display: flex;
+  // flex-wrap: wrap;
+  justify-content: space-between;
+
+  // height: 445px;
+  transition: all 0.5s;
+}
+
+.goods__card-item {
+  flex-shrink: 0;
+  margin: 0 0.8%;
+  width: 15%;
+  // max-width: 270px;
+  // height: 445px;
+}
+
+.goods__slider {
+  display: flex;
+  margin: 130px auto;
+  // margin-bottom: 135px;
+
+  width: 270px;
+  height: 8px;
+
+  background-color: @grayCard;
+  border-radius: 10px;
+}
+
+.goods__slide-button {
+  display: block;
+
+  width: 20%;
+  height: 8px;
+  box-sizing: border-box;
+
+  font-size: 0;
+
+  background-color: @grayCard;
+  border-left: 1px solid @white;
+  border-right: 1px solid @white;
+  cursor: pointer;
+}
+
+#goods__fruits:checked ~ .goods__menu .goods-menu__item:nth-child(2) .goods-menu__button {
+  color: @white;
+  background-color: @green;
+}
+
+#goods__vegetables:checked ~ .goods__menu .goods-menu__item:nth-child(3) .goods-menu__button {
+  color: @white;
+  background-color: @green;
+}
+
+#goods__juices:checked ~ .goods__menu .goods-menu__item:nth-child(4) .goods-menu__button {
+  color: @white;
+  background-color: @green;
+}
+
+#goods__dryfruits:checked ~ .goods__menu .goods-menu__item:nth-child(5) .goods-menu__button {
+  color: @white;
+  background-color: @green;
+}
+
+#goods__slide1:checked ~ .goods__slider .goods__slide-button:nth-of-type(1) {
+  background-color: @green;
+}
+
+#goods__slide2:checked ~ .goods__slider .goods__slide-button:nth-of-type(2) {
+  background-color: @green;
+}
+
+#goods__slide3:checked ~ .goods__slider .goods__slide-button:nth-of-type(3) {
+  background-color: @green;
+}
+
+#goods__slide4:checked ~ .goods__slider .goods__slide-button:nth-of-type(4) {
+  background-color: @green;
+}
+
+#goods__slide5:checked ~ .goods__slider .goods__slide-button:nth-of-type(5) {
+  background-color: @green;
+}
+
+#goods__slide1:checked ~ .goods__cards {
+  left: 0;
+}
+
+#goods__slide2:checked ~ .goods__cards {
+  left: -99.6%;
+}
+
+#goods__slide3:checked ~ .goods__cards {
+  left: -199.2%;
+}
+
+#goods__slide4:checked ~ .goods__cards {
+  left: -298.8%;
+}
+
+#goods__slide5:checked ~ .goods__cards {
+  left: -398.4%;
+}
+
+.goods--expand {
+  font-family: 'Roboto', sans-serif;
+}
+
+.goods__intro {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.goods--expand .goods__headline {
+  display: block;
+  margin: 0;
+  margin-bottom: 25px;
+
+  font-size: 12px;
+  font-weight: @fontMedium;
+  color: @grayHeadline;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.goods--expand .goods__subline {
+  position: relative;
+  z-index: 5;
+  display: inline-block;
+  margin: 0 auto;
+  margin-bottom: 65px;
+  padding: 0 45px;
+  padding-bottom: 10px;
+
+  font-size: 40px;
+  font-weight: @fontLight;
+  line-height: 60px;
+  color: @grayHeadline;
+  text-align: center;
+
+  background-color: @white;
+  border: 2px solid @lightGray;
+  border-radius: 50px;
+}
+
+.goods--expand .goods__subline b  {
+  font-weight: @fontBlack;
+}
+
+.goods--expand .goods__logo {
+  position: relative;
+  top: -7px;
+  display: inline-block;
+  width: 135px;
+  height: 70px;
+
+  font-size: 0;
+  vertical-align: bottom;
+
+  background: url('../img/logo-organic.png') no-repeat;
+}
+
+.goods__decorline {
+  position: absolute;
+  top: 80px;
+  left: 0;
+  right: 0;
+  z-index: 0;
+  display: block;
+
+  height: 2px;
+
+  background-color: @lightGray;
+}
+
+.goods--expand .goods__cards {
+  margin-bottom: 100px;
+}
+
+.goods--expand .goods__card-item {
+  flex-shrink: 0;
+  margin: 0;
+  margin-right: 30px;
+  width: 270px;
+  // max-width: 270px;
+  // height: 445px;
+}
+
+#goods-expand__goods:checked ~ .goods__menu .goods-menu__item:nth-child(1) .goods-menu__button {
+  color: @white;
+  background-color: @green;
+}
+
+#goods-expand__vegetables:checked ~ .goods__menu .goods-menu__item:nth-child(2) .goods-menu__button {
+  color: @white;
+  background-color: @green;
+}
+
+#goods-expand__fruits:checked ~ .goods__menu .goods-menu__item:nth-child(3) .goods-menu__button {
+  color: @white;
+  background-color: @green;
+}
+
+#goods-expand__tea:checked ~ .goods__menu .goods-menu__item:nth-child(4) .goods-menu__button {
+  color: @white;
+  background-color: @green;
+}
+
+#goods-expand__breads:checked ~ .goods__menu .goods-menu__item:nth-child(5) .goods-menu__button {
+  color: @white;
+  background-color: @green;
+}
+
+#goods-expand__juices:checked ~ .goods__menu .goods-menu__item:nth-child(6) .goods-menu__button {
+  color: @white;
+  background-color: @green;
+}
+
+#goods-expand__slide1:checked ~ .goods__slider .goods__slide-button:nth-of-type(1) {
+  background-color: @green;
+}
+
+#goods-expand__slide2:checked ~ .goods__slider .goods__slide-button:nth-of-type(2) {
+  background-color: @green;
+}
+
+#goods-expand__slide3:checked ~ .goods__slider .goods__slide-button:nth-of-type(3) {
+  background-color: @green;
+}
+
+#goods-expand__slide4:checked ~ .goods__slider .goods__slide-button:nth-of-type(4) {
+  background-color: @green;
+}
+
+#goods-expand__slide5:checked ~ .goods__slider .goods__slide-button:nth-of-type(5) {
+  background-color: @green;
+}
+
+#goods-expand__slide1:checked ~ .goods__cards {
+  left: 0;
+}
+
+#goods-expand__slide2:checked ~ .goods__cards {
+  left: -1200px;
+}
+
+#goods-expand__slide3:checked ~ .goods__cards {
+  left: -2400px;
+}
+
+#goods-expand__slide4:checked ~ .goods__cards {
+  left: -3600px;
+}
+
+#goods-expand__slide5:checked ~ .goods__cards {
+  left: -4800px;
+}

@@ -1,0 +1,66 @@
+.advantage-card {
+  position: relative;
+  display: block;
+  margin: 0 35px;
+  padding-top: 120px;
+
+  width: 270px;
+
+  color: @grayHeadline;
+}
+
+.advantage__card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  display: block;
+  margin-left: -60px;
+
+  width: 120px;
+  height: 118px;
+
+  background: url('../img/advantage-card.png');
+}
+
+.advantage__card:nth-of-type(1)::before {
+  background-position: 0px 0px;
+}
+
+.advantage__card:nth-of-type(2)::before {
+  background-position: -120px 0px;
+}
+
+.advantage__card:nth-of-type(3)::before {
+  background-position: -240px 0px;
+}
+
+.advantage__card:nth-of-type(4)::before {
+  background-position: -360px 0px;
+}
+
+.advantage-card__name {
+  display: block;
+  margin: 25px 0;
+
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: @fontRegular;
+  text-align: center;
+}
+
+.advantage-card__name b {
+  font-weight: @fontBlack;
+}
+
+.advantage-card__descr {
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  font-weight: @fontRegular;
+  text-align: center;
+}
+
+.advantage-card__link {
+  font-size: 12px;
+  font-weight: @fontMedium;
+}

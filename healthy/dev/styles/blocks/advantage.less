@@ -1,0 +1,92 @@
+.advantage {
+  font-family: 'Roboto', sans-serif;
+}
+
+.advantage__subline {
+  margin: 0;
+
+  font-size: 40px;
+  font-weight: @fontLight;
+  color: @grayHeadline;
+  text-align: center;
+}
+
+.advantage__logo {
+  display: inline-block;
+  width: 135px;
+  height: 70px;
+
+  font-size: 0;
+  vertical-align: bottom;
+
+  background: url('../img/logo-organic.png') no-repeat;
+}
+
+.advantage__subline b {
+  font-weight: @fontBlack
+}
+
+.advantage__headline {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 35px;
+  width: 270px;
+
+  font-size: 12px;
+  font-weight: @fontMedium;
+  line-height: 35px;
+  color: @grayHeadline;
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.advantage__headline::before,
+.advantage__headline::after {
+  content: '';
+  position: absolute;
+  top: 17px;
+
+  display: block;
+  width: 45px;
+  height: 1px;
+
+  background-color: @grayDecorLines;
+}
+
+.advantage__headline::before {
+  left: -10px;
+}
+
+.advantage__headline::after {
+  right: -10px;
+}
+
+.advantage__intro-text {
+  margin: 0 auto;
+  margin-bottom: 80px;
+  width: 890px;
+
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  font-weight: @fontRegular;
+  color: @grayHeadline;
+  text-align: center;
+}
+
+.advantage__list {
+  display: flex;
+  justify-content: center;
+
+  margin: 0 auto;
+}
+
+.advantage__card:first-of-type,
+.advantage__card:last-of-type {
+  margin-top: 90px;
+}
+
+.advantage-card__link {
+  margin: 0 auto;
+}

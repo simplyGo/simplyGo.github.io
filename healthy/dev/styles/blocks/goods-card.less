@@ -1,0 +1,174 @@
+.goods-card {
+  position: relative;
+  // display: flex;
+  // flex-direction: column;
+
+  padding-top: 125px;
+
+  font-family: 'Roboto', sans-serif;
+
+  background-color: @grayCard;
+  border-radius: 10px;
+}
+
+.goods-card__image {
+  display: block;
+  margin: 0 auto;
+  // width: 170px;
+  // height: 192px;
+}
+
+.goods-card__tags,
+.goods-card__control-panel {
+  position: absolute;
+  top: 55px;
+  left: 50%;
+
+  display: flex;
+  justify-content: space-between;
+  margin-left: -73px;
+  width: 146px;
+}
+
+.goods-card__tag {
+  width: 68px;
+  height: 23px;
+
+  font-family: 'Raleway', sans-serif;
+  font-size: 11px;
+  font-weight: @fontBold;
+  line-height: 23px;
+  color: @white;
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid @white;
+  border-radius: 50px;
+}
+
+.goods-card__tag--new {
+  background-color: @lightGreen;
+}
+
+.goods-card__tag--sale {
+  background-color: @lightBlue;
+}
+
+.goods-card__descr {
+  background-color: @white;
+}
+
+.goods-card__name {
+  display: block;
+  padding-top: 20px;
+  margin-bottom: 5px;
+
+  font-size: 20px;
+  font-weight: @fontRegular;
+  color: @grayCardText;
+  text-align: center;
+}
+
+.goods-card__name b {
+  font-weight: @fontBlack;
+}
+
+.goods-card__price-block {
+  padding-bottom: 45px;
+
+  text-align: center;
+}
+
+.goods-card__price {
+  font-size: 14px;
+  font-weight: @fontBold;
+  font-style: normal;
+  color: @price;
+}
+
+.goods-card__price--old {
+  color: @priceOld;
+  text-decoration: line-through;
+}
+
+.goods-card__control-panel {
+  display: none;
+  justify-content: center;
+  top: 45px;
+
+  margin-left: -75px;
+  width: 150px;
+  height: 40px;
+
+  background-color: @white;
+  border-radius: 25px;
+}
+
+.goods-card__control-panel::before,
+.goods-card__control-panel::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  display: block;
+  margin-left: -1px;
+  width: 2px;
+  height: 100%;
+
+  background-color: @grayCard;
+}
+
+.goods-card__control-panel::before {
+  left: 50px;
+}
+
+.goods-card__control-panel::after {
+  left: 100px;
+}
+
+.goods-card__control-item {
+  position: relative;
+  font-size: 0;
+}
+
+.goods-card__control-item:nth-last-of-type(1)::before {
+  display: none;
+}
+
+.goods-card__control-button {
+  display: block;
+  margin: 0 5px;
+  width: 40px;
+  height: 40px;
+
+  cursor: pointer;
+}
+
+.goods-card__control-button::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  margin-top: -13px;
+  margin-left: -13px;
+  width: 26px;
+  height: 26px;
+
+  background: url('../img/sprite.png');
+}
+
+.goods-card__control-button--like::before {
+  background-position: -13px -36px;
+}
+
+.goods-card__control-button--tocart::before {
+  background-position: -13px -9px;
+}
+
+.goods-card__control-button--more::before {
+  background-position: -13px -62px;
+}
+
+.goods-card:hover .goods-card__control-panel {
+  display: flex;
+}

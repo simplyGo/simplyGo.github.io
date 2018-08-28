@@ -1,0 +1,194 @@
+.main-control {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 20px 15px;
+  height: 70px;
+  box-sizing: border-box;
+}
+
+.main-control__contacts {
+  display: none;
+}
+
+.main-control__logo {
+  width: 40px;
+  height: 23px;
+}
+
+.main-control__logo-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.main-control__input {
+  display: none;
+}
+
+#main-nav-toggle:checked ~ .main-header__nav {
+  display: block;
+}
+
+#main-nav-toggle:checked ~ .main-header__wrapper {
+  display: none;
+}
+
+#main-nav-toggle:checked ~ .main-nav__color-env {
+  opacity: 1;
+}
+
+// changing button style
+
+#main-nav-toggle:checked ~ .main-control {
+  justify-content: flex-end;
+}
+
+#main-nav-toggle:checked ~ .main-control .main-control__logo {
+  display: none;
+}
+
+#main-nav-toggle:checked ~ .main-control .button--nav {
+  width: 30px;
+  height: 30px;
+}
+
+
+#main-nav-toggle:checked ~ .main-control .button--nav::before,
+#main-nav-toggle:checked ~ .main-control .button--nav::after {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 14px;
+  left: 0;
+  right: 0;
+  height: 2px;
+
+  background-color: @whiteText;
+  box-shadow: none;
+}
+
+#main-nav-toggle:checked ~ .main-control .button--nav::before {
+  transform: rotate(45deg);
+}
+
+#main-nav-toggle:checked ~ .main-control .button--nav::after {
+  transform: rotate(-45deg);
+}
+
+@media (min-width: @tabs_width) {
+  .main-control {
+    padding: 60px 35px;
+    height: 165px;
+  }
+
+  .main-control__logo {
+    width: 89px;
+    height: 45px;
+  }
+
+  #main-nav-toggle:checked ~ .main-control .button--nav {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+@media (min-width: @desktop_width) {
+  .main-control {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    height: 85px
+  }
+
+  .main-control__button {
+    order: 0;
+    align-self: center;
+
+    width: 180px;
+  }
+
+  .main-control__logo {
+    order: 1;
+
+    width: 62px;
+    height: 29px;
+  }
+
+  .main-control__logo-image {
+    background -position: -92px -31px;
+  }
+
+  .main-control__contacts {
+    order: 2;
+    align-self: center;
+    position: relative;
+    display: block;
+
+    width: 180px;
+
+    font-size: 14px;
+    font-weight: @fontWeightNormal;
+    color: @text-number;
+    text-align: right;
+  }
+
+  .main-control__contacts::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 45px;
+    display: block;
+    width: 12px;
+    height: 15px;
+
+    background-image: url('../img/icons.png');
+    background-repeat: no-no-repeat;
+    background-position: 0 -119px;
+
+    opacity: @opacity__50;
+  }
+
+  #main-nav-toggle:checked ~ .main-nav__color-env {
+    display: none;
+  }
+
+  #main-nav-toggle:checked ~ .main-nav .main-nav__list {
+    display: block;
+  }
+
+  #main-nav-toggle:checked ~ .main-header__wrapper {
+    display: block;
+    z-index: 0;
+  }
+
+  #main-nav-toggle:checked ~ .main-control {
+    justify-content: space-between;
+  }
+
+  #main-nav-toggle:checked ~ .main-control .main-control__logo {
+    display: block;
+  }
+
+  #main-nav-toggle:checked ~ .main-control .button--nav::before {
+    top: 13px;
+    height: 2px;
+
+    background-color: @whiteText;
+    border-radius: 0;
+    box-shadow:
+      0 8px 0 0 @whiteText,
+      0 16px 0 0 @whiteText;
+  }
+
+  #main-nav-toggle:checked ~ .main-control .button--nav {
+    width: 25px;
+  }
+
+  #main-nav-toggle:checked ~ .main-control .button--nav::before {
+    transform: rotate(0);
+  }
+
+  #main-nav-toggle:checked ~ .main-control .button--nav::after {
+    display: none;
+  }
+}

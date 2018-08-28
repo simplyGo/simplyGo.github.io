@@ -1,0 +1,164 @@
+.button {
+  position: relative;
+  display: block;
+
+  padding: 0;
+
+  font-size: 0;
+  color: @whiteText;
+  text-decoration: none;
+  background: none;
+  border: none;
+  outline: none;
+
+  cursor: pointer;
+}
+
+// --- NAV ---
+
+.button--nav {
+  width: 35px;
+  height: 28px;
+
+  user-select: none; // to avoid selecting all block after double-click on button
+}
+
+.button--nav::before {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+
+  background-color: @whiteText;
+  border-radius: 5px;
+  box-shadow:
+    0 12px 0 0 @whiteText,
+    0 24px 0 0 @whiteText;
+}
+
+@media (min-width: @tabs_width) {
+  .button--nav {
+    width: 64px;
+    height: 44px;
+  }
+}
+
+@media (min-width: @desktop_width) {
+  .button--nav {
+    width: 25px;
+    height: 20px;
+  }
+
+  .button--nav::before {
+    height: 2px;
+
+    background-color: @whiteText;
+    border-radius: 0;
+    box-shadow:
+      0 8px 0 0 @whiteText,
+      0 16px 0 0 @whiteText;
+  }
+}
+
+// --- SUBMIT ---
+
+.button--submit {
+  width: 225px;
+  height: 55px;
+
+  font-size: 14px;
+  font-weight: @fontWeightXtraBold;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 55px;
+  text-transform: uppercase;
+
+  background-color: @orange;
+}
+
+@media (min-width: @tabs_width) {
+  .button--submit {
+    width: 440px;
+    height: 110px;
+
+    font-size: 30px;
+    line-height: 110px;
+  }
+}
+
+@media (min-width: @desktop_width) {
+  .button--submit {
+    width: 275px;
+    height: 55px;
+
+    font-size: 14px;
+    line-height: 55px;
+  }
+}
+
+// --- PLAY ---
+
+.button--play {
+  width: 84px;
+  height: 84px;
+
+  background-color: @orange;
+  border-radius: 50%;
+}
+
+.button--play::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  margin-top: -10px;
+  margin-left: -5px;
+
+  width: 18px;
+  height: 21px;
+
+  background: url('../img/sprite.png') no-repeat;
+  background-position: -22px 0px;
+}
+
+ // временно
+.button--play:hover {
+  opacity: 0.26;
+}
+
+@media (min-width: @tabs_width) {
+  .button--play {
+    width: 130px;
+    height: 130px;
+  }
+
+  .button--play::before {
+    margin-top: -16px;
+    margin-left: -10px;
+
+    width: 28px;
+    height: 32px;
+    background-position: -22px -20px;
+  }
+}
+
+@media (min-width: @desktop_width) {
+  .button--play {
+    width: 84px;
+    height: 84px;
+  }
+
+  .button--play::before {
+    margin-top: -11px;
+    margin-left: -7px;
+
+    width: 18px;
+    height: 22px;
+
+    background-position: -22px 1px;
+  }
+}

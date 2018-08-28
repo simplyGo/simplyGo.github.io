@@ -1,0 +1,18 @@
+.container {
+  margin: 0;
+}
+
+@media (min-width: @tabletWidthMin) {
+  .container {
+    margin: 0 auto;
+
+    width: @tabletWidthMin;
+    box-sizing: border-box;
+  }
+}
+
+@media (min-width: @desktopWidthMin) {
+  .container {
+    width: @desktopWidthMin;
+  }
+}

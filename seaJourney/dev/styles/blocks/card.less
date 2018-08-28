@@ -1,0 +1,202 @@
+.card {
+  position: relative;
+  font-family: 'Roboto Slab', serif;
+
+  background-color: @white;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  right: 25px;
+  display: none;
+  width: 90px;
+  height: 100px;
+  box-sizing: border-box;
+
+  border: 45px solid @blue;
+  border-top-width: 80px;
+  border-bottom-width: 20px;
+  border-bottom-color: transparent;
+}
+
+.card::after {
+  content: '';
+  position: absolute;
+  top: -10px;
+  right: 25px;
+  display: none;
+  padding: 0 15px;
+  padding-top: 30px;
+  width: 90px;
+
+  box-sizing: border-box;
+
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  font-weight: @fontRegular;
+  line-height: 18px;
+  color: @white;
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.card--hit::before {
+  display: block;
+}
+
+.card--hit::after {
+  content: 'Хит продаж';
+  display: block;
+  padding-top: 25px;
+}
+
+.card--promo::before {
+  display: block;
+  border-color: @red;
+  border-bottom-color: transparent;
+}
+
+.card--promo::after {
+  content: 'Акция';
+  display: block;
+}
+
+.card--sale::before {
+  display: block;
+  border-color: @red;
+  border-bottom-color: transparent;
+}
+
+.card--sale::after {
+  content: 'Скидка 10%';
+  display: block;
+}
+
+.card__img {
+  display: block;
+  width: 290px;
+  height: 228px;
+
+  background-color: #aebdd9; // for a while
+}
+
+.card__info {
+  padding: 0 25px;
+  padding-top: 30px;
+  padding-bottom: 40px;
+  width: 290px;
+  box-sizing: border-box;
+}
+
+.card__name {
+  display: inline-block;
+  margin: 0;
+  margin-bottom: 10px;
+
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: @fontRegular;
+  color: @blue;
+  text-decoration: none;
+}
+
+.card__name::after {
+  content: '';
+  display: inline-block;
+  margin-left: 10px;
+
+  vertical-align: middle;
+
+  border: 5px solid @blue;
+  border-right-width: 0;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+}
+
+.card__descr {
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+}
+
+.card__descr-item {
+  margin: 0;
+  margin-bottom: 5px;
+
+  font-size: 14px;
+  font-weight: @fontRegular;
+  line-height: 24px;
+  color: @darkBlue;
+}
+
+.card__add-info {
+  font-weight: @fontBold;
+}
+
+.card__price {
+  margin: 0;
+  margin-top: 18px;
+}
+
+.card__price--cur {
+  font-size: 30px;
+  font-weight: @fontRegular;
+}
+
+.card__price--old {
+  font-size: 18px;
+  font-weight: @fontRegular;
+  font-style: normal;
+  text-decoration: line-through;
+  opacity: 0.55;
+}
+
+
+@media (min-width: @tabletWidthMin) {
+  .card__img {
+    width: 345px;
+    height: 272px;
+  }
+
+  .card__info {
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 345px;
+  }
+}
+
+@media (min-width: @desktopWidthMin) {
+  .card__img {
+    width: 555px;
+    height: 215px;
+  }
+
+  .card__info {
+    width: 100%;
+  }
+
+  .card__name {
+    margin-bottom: 10px;
+  }
+
+  .card__name br {
+    display: none;
+  }
+
+  // .card--hit,
+  // .card--promo,
+  // .card--sale {
+  //   float: left;
+  // }
+
+  .card--hit .card__img {
+    height: 450px;
+  }
+
+  .card--promo .card__img,
+  .card--sale .card__img {
+    height: 105px;
+  }
+}

@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Морские круизы</title>
+    <link rel='stylesheet' href='css/style.css'>
+    <link href="https://fonts.googleapis.com/css?family=Gilda+Display" rel="stylesheet">
+</head>
+<body>
+  <header class='page-header'>
+    <div class='container wrapper'>
+      <nav class='page-header__nav main-nav'>
+        <input id='main-nav__toggle-menu' class='main-nav__control' type='checkbox'>
+        <input id='main-nav__user-block' class='main-nav__control' type='checkbox'>
+        <label for='main-nav__toggle-menu' class='main-nav__toggle-menu'>open menu</label>
+        <div class='main-nav__menu'>
+          <!-- curr control elements -->
+          <input id='curr-rub' class='main-nav__control' type='radio' name='main-nav__curr-block' checked>
+          <input id='curr-dollar' class='main-nav__control' type='radio' name='main-nav__curr-block'>
+          <input id='curr-euro' class='main-nav__control' type='radio' name='main-nav__curr-block'>
+          <input id='curr-all' class='main-nav__control' type='radio' name='main-nav__curr-block'>
+          <!-- lang control elements -->
+          <input id='lang-ru' class='main-nav__control' type='radio' name='main-nav__lang-block' checked>
+          <input id='lang-eng' class='main-nav__control' type='radio' name='main-nav__lang-block'>
+          <input id='lang-all' class='main-nav__control' type='radio' name='main-nav__lang-block'>
+          <!-- menu blocks -->
+          <div class='main-nav__user-block-controls'>
+            <a class='main-nav__user-block-controls--link' href='#'>Личный кабинет</a>
+            <label for='main-nav__user-block' class='main-nav__user-block-controls--button'>user-account</label>
+          </div>
+          <div class='main-nav__curr-block curr-block'>
+            <ul class='curr-block__list default-list'>
+              <li class='curr-block__item curr-block__item--rub'>
+                <label for='curr-rub' class='curr-block__button curr-block__button--this'>Рубль</label>
+                <label for='curr-all' class='curr-block__button curr-block__button--all'>Рубль</label>
+              </li>
+              <li class='curr-block__item curr-block__item--dollar'>
+                <label for='curr-dollar' class='curr-block__button curr-block__button--this'>Доллар</label>
+                <label for='curr-all' class='curr-block__button curr-block__button--all'>Доллар</label>
+              </li>
+              <li class='curr-block__item curr-block__item--euro'>
+                <label for='curr-euro' class='curr-block__button curr-block__button--this'>Евро</label>
+                <label for='curr-all' class='curr-block__button curr-block__button--all'>Евро</label>
+              </li>
+            </ul>
+          </div>
+          <div class='main-nav__lang-block lang-block'>
+            <ul class='lang-block__list default-list'>
+              <li class='lang-block__item lang-block__item--ru'>
+                <label for='lang-ru' class='lang-block__button lang-block__button--this'>Ru</label>
+                <label for='lang-all' class='lang-block__button lang-block__button--all'>Ru</label>
+              </li>
+              <li class='lang-block__item lang-block__item--eng'>
+                <label for='lang-eng' class='lang-block__button lang-block__button--this'>Eng</label>
+                <label for='lang-all' class='lang-block__button lang-block__button--all'>Eng</label>
+              </li>
+            </ul>
+          </div>
+          <div class='main-nav__contacts contacts'>
+            <span class='contacts__number'>8 800 500-61-05</span>
+            <span class='contacts__descr'>Круглосуточная поддержка</span>
+          </div>
+        </div>
+        </div>
+        <div class='main-nav__user-block'>
+          <!-- smth here -->
+        </div>
+      </nav>
+      <h1 class='page-header__headline'>Морские прогулки</h1>
+      <b class='page-header__subline'>по чёрному морю</b>
+      <a class='page-header__button button button--main' href='#journey'>Выбрать круиз</a>
+    </div>
+  </header>
+  <main class='page-main'>
+    <section class='page-main__catalog catalog container wrapper'>
+      <h2 id='journey' class='catalog__headline'>Каталог круизов</h2>
+      <div class='catalog__sort sort'>
+        <input id='sort-type--priceUp' class='sort__control' type='radio' name='sort-type'>
+        <input id='sort-type--priceDown' class='sort__control' type='radio' name='sort-type'>
+        <input id='sort-type--new' class='sort__control' type='radio' name='sort-type' checked>
+        <input id='sort-type--popular' class='sort__control' type='radio' name='sort-type'>
+        <input id='sort-list' class='sort__control' type='radio' name='sort-type'>
+        <div class='sort__wrapper'>
+          <ul class='sort__list default-list'>
+            <li class='sort__item'>
+              <label for='sort-type--priceUp' class='sort__type sort__type--priceUp sort__show-this'>Сортировать круизы по <span>цене</span></label>
+              <label for='sort-list' class='sort__type sort__type--priceUp sort__show-all'>Сортировать круизы по <span>цене</span></label>
+            </li>
+            <li class='sort__item'>
+              <label for='sort-type--priceDown' class='sort__type sort__type--priceDown sort__show-this'>Сортировать круизы по <span>цене</span></label>
+              <label for='sort-list' class='sort__type sort__type--priceDown sort__show-all'>Сортировать круизы по <span>цене</span></label>
+            </li>
+            <li class='sort__item'>
+              <label for='sort-type--new' class='sort__type sort__type--new sort__show-this'>Сортировать круизы по <span>новизне</span></label>
+              <label for='sort-list' class='sort__type sort__type--new sort__show-all'>Сортировать круизы по <span>новизне</span></label>
+            </li>
+            <li class='sort__item'>
+              <label for='sort-type--popular' class='sort__type sort__type--popular sort__show-this'>Сортировать круизы по <span>популярности</span></label>
+              <label for='sort-list' class='sort__type sort__type--popular sort__show-all'>Сортировать круизы по <span>популярности</span></label>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <ul class='catalog__list default-list catalog__clearfix'>
+        <li class='catalog__item'>
+          <article class='card card--hit'>
+            <img srcset='
+                img/card1-m.jpg 290w,
+                img/card1-t.jpg 345w,
+                img/card1-d.jpg 555w'
+              sizes='
+                (max-width: 749px) 290px,
+                (max-width: 1139px) 345px,
+                555px
+              ' alt='card__img'  class='card__img' width='290' height='228'>
+            <div class='card__info'>
+              <a class='card__name' href='#'>Морской круиз<br> в Анапу</a>
+              <p class='card__descr'>
+                <p class='card__descr-item'>
+                  <b class='card__add-info'>Маршрут:</b> Сочи-Лазаревское- Геленджик-Анапа
+                </p>
+                <p class='card__descr-item'>
+                  <b class='card__add-info'>Продолжительность:</b> 10 ч. 0 мин.
+                </p>
+              </p>
+              <p class='card__price'>
+                <b class='card__price--cur'>49 000 руб.</b>
+              </p>
+            </div>
+          </article>
+        </li>
+        <li class='catalog__item'>
+          <article class='card card--promo'>
+            <img srcset='
+                img/card2-m.jpg 290w,
+                img/card2-t.jpg 345w,
+                img/card2-d.jpg 555w'
+              sizes='
+                (max-width: 749px) 290px,
+                (max-width: 1139px) 345px,
+                555px
+              ' alt='card__img'  class='card__img' width='290' height='228'>
+            <div class='card__info'>
+              <a class='card__name' href='#'>Морской круиз<br> в Анапу</a>
+              <p class='card__descr'>
+                <p class='card__descr-item'>
+                  <b class='card__add-info'>Маршрут:</b> Сочи-Лазаревское- Геленджик-Анапа
+                </p>
+                <p class='card__descr-item'>
+                  <b class='card__add-info'>Продолжительность:</b> 10 ч. 0 мин.
+                </p>
+              </p>
+              <p class='card__price'>
+                <b class='card__price--cur'>5 000 руб.</b>
+                <i class='card__price--old'>15 000 руб.</i>
+              </p>
+            </div>
+          </article>
+        </li>
+        <li class='catalog__item'>
+          <article class='card card--sale'>
+            <img srcset='
+                img/card3-m.jpg 290w,
+                img/card3-t.jpg 345w,
+                img/card3-d.jpg 555w'
+              sizes='
+                (max-width: 749px) 290px,
+                (max-width: 1139px) 345px,
+                555px
+              ' alt='card__img'  class='card__img' width='290' height='228'>
+            <div class='card__info'>
+              <a class='card__name' href='#'>Морской круиз<br> в Анапу</a>
+              <p class='card__descr'>
+                <p class='card__descr-item'>
+                  <b class='card__add-info'>Маршрут:</b> Сочи-Лазаревское- Геленджик-Анапа
+                </p>
+                <p class='card__descr-item'>
+                  <b class='card__add-info'>Продолжительность:</b> 10 ч. 0 мин.
+                </p>
+              </p>
+              <p class='card__price'>
+                <b class='card__price--cur'>7 000 руб.</b>
+                <i class='card__price--old'>10 000 руб.</i>
+              </p>
+            </div>
+          </article>
+        </li>
+        <li class='catalog__item'>
+          <article class='card'>
+            <img srcset='
+                img/card4-m.jpg 290w,
+                img/card4-t.jpg 345w,
+                img/card4-d.jpg 555w'
+              sizes='
+                (max-width: 749px) 290px,
+                (max-width: 1139px) 345px,
+                555px
+              ' alt='card__img'  class='card__img' width='290' height='228'>
+            <div class='card__info'>
+              <a class='card__name' href='#'>Морской круиз<br> в Анапу</a>
+              <p class='card__descr'>
+                <p class='card__descr-item'>
+                  <b class='card__add-info'>Маршрут:</b> Сочи-Лазаревское- Геленджик-Анапа
+                </p>
+                <p class='card__descr-item'>
+                  <b class='card__add-info'>Продолжительность:</b> 10 ч. 0 мин.
+                </p>
+              </p>
+              <p class='card__price'>
+                <b class='card__price--cur'>14 800 руб.</b>
+              </p>
+            </div>
+          </article>
+        </li>
+        <li class='catalog__item'>
+          <article class='card'>
+            <img srcset='
+                img/card4-m.jpg 290w,
+                img/card4-t.jpg 345w,
+                img/card5-d.jpg 555w'
+              sizes='
+                (max-width: 749px) 290px,
+                (max-width: 1139px) 345px,
+                555px
+              ' alt='card__img'  class='card__img' width='290' height='228'>
+            <div class='card__info'>
+              <a class='card__name' href='#'>Морской круиз<br> в Анапу</a>
+              <p class='card__descr'>
+                <p class='card__descr-item'>
+                  <b class='card__add-info'>Маршрут:</b> Сочи-Лазаревское- Геленджик-Анапа
+                </p>
+                <p class='card__descr-item'>
+                  <b class='card__add-info'>Продолжительность:</b> 10 ч. 0 мин.
+                </p>
+              </p>
+              <p class='card__price'>
+                <b class='card__price--cur'>11 800 руб.</b>
+              </p>
+            </div>
+          </article>
+        </li>
+        <li class='catalog__item'>
+          <article class='card'>
+            <img srcset='
+                img/card4-m.jpg 290w,
+                img/card4-t.jpg 345w,
+                img/card5-d.jpg 555w'
+              sizes='
+                (max-width: 749px) 290px,
+                (max-width: 1139px) 345px,
+                555px
+              ' alt='card__img'  class='card__img' width='290' height='228'>
+            <div class='card__info'>
+              <a class='card__name' href='#'>Морской круиз<br> в Анапу</a>
+              <p class='card__descr'>
+                <p class='card__descr-item'>
+                  <b class='card__add-info'>Маршрут:</b> Сочи-Лазаревское- Геленджик-Анапа
+                </p>
+                <p class='card__descr-item'>
+                  <b class='card__add-info'>Продолжительность:</b> 10 ч. 0 мин.
+                </p>
+              </p>
+              <p class='card__price'>
+                <b class='card__price--cur'>15 800 руб.</b>
+              </p>
+            </div>
+          </article>
+        </li>
+        <li class='catalog__item'>
+          <article class='card'>
+            <img srcset='
+                img/card4-m.jpg 290w,
+                img/card4-t.jpg 345w,
+                img/card5-d.jpg 555w'
+              sizes='
+                (max-width: 749px) 290px,
+                (max-width: 1139px) 345px,
+                555px
+              ' alt='card__img'  class='card__img' width='290' height='228'>
+            <div class='card__info'>
+              <a class='card__name' href='#'>Морской круиз<br> в Анапу</a>
+              <p class='card__descr'>
+                <p class='card__descr-item'>
+                  <b class='card__add-info'>Маршрут:</b> Сочи-Лазаревское- Геленджик-Анапа
+                </p>
+                <p class='card__descr-item'>
+                  <b class='card__add-info'>Продолжительность:</b> 10 ч. 0 мин.
+                </p>
+              </p>
+              <p class='card__price'>
+                <b class='card__price--cur'>9 500 руб.</b>
+              </p>
+            </div>
+          </article>
+        </li>
+        <li class='catalog__item'>
+          <article class='card'>
+            <img srcset='
+                img/card4-m.jpg 290w,
+                img/card4-t.jpg 345w,
+                img/card5-d.jpg 555w'
+              sizes='
+                (max-width: 749px) 290px,
+                (max-width: 1139px) 345px,
+                555px
+              ' alt='card__img'  class='card__img' width='290' height='228'>
+            <div class='card__info'>
+              <a class='card__name' href='#'>Морской круиз<br> в Анапу</a>
+              <p class='card__descr'>
+                <p class='card__descr-item'>
+                  <b class='card__add-info'>Маршрут:</b> Сочи-Лазаревское- Геленджик-Анапа
+                </p>
+                <p class='card__descr-item'>
+                  <b class='card__add-info'>Продолжительность:</b> 10 ч. 0 мин.
+                </p>
+              </p>
+              <p class='card__price'>
+                <b class='card__price--cur'>11 800 руб.</b>
+              </p>
+            </div>
+          </article>
+        </li>
+        <li class='catalog__item'>
+          <article class='card'>
+            <img srcset='
+                img/card4-m.jpg 290w,
+                img/card4-t.jpg 345w,
+                img/card5-d.jpg 555w'
+              sizes='
+                (max-width: 749px) 290px,
+                (max-width: 1139px) 345px,
+                555px
+              ' alt='card__img'  class='card__img' width='290' height='228'>
+            <div class='card__info'>
+              <a class='card__name' href='#'>Морской круиз<br> в Анапу</a>
+              <p class='card__descr'>
+                <p class='card__descr-item'>
+                  <b class='card__add-info'>Маршрут:</b> Сочи-Лазаревское- Геленджик-Анапа
+                </p>
+                <p class='card__descr-item'>
+                  <b class='card__add-info'>Продолжительность:</b> 10 ч. 0 мин.
+                </p>
+              </p>
+              <p class='card__price'>
+                <b class='card__price--cur'>15 800 руб.</b>
+              </p>
+            </div>
+          </article>
+        </li>
+        <li class='catalog__item'>
+          <article class='card'>
+            <img srcset='
+                img/card4-m.jpg 290w,
+                img/card4-t.jpg 345w,
+                img/card5-d.jpg 555w'
+              sizes='
+                (max-width: 749px) 290px,
+                (max-width: 1139px) 345px,
+                555px
+              ' alt='card__img'  class='card__img' width='290' height='228'>
+            <div class='card__info'>
+              <a class='card__name' href='#'>Морской круиз<br> в Анапу</a>
+              <p class='card__descr'>
+                <p class='card__descr-item'>
+                  <b class='card__add-info'>Маршрут:</b> Сочи-Лазаревское- Геленджик-Анапа
+                </p>
+                <p class='card__descr-item'>
+                  <b class='card__add-info'>Продолжительность:</b> 10 ч. 0 мин.
+                </p>
+              </p>
+              <p class='card__price'>
+                <b class='card__price--cur'>20 000 руб.</b>
+              </p>
+            </div>
+          </article>
+        </li>
+        <li class='catalog__item'>
+          <article class='card'>
+            <img srcset='
+                img/card4-m.jpg 290w,
+                img/card4-t.jpg 345w,
+                img/card5-d.jpg 555w'
+              sizes='
+                (max-width: 749px) 290px,
+                (max-width: 1139px) 345px,
+                555px
+              ' alt='card__img'  class='card__img' width='290' height='228'>
+            <div class='card__info'>
+              <a class='card__name' href='#'>Морской круиз<br> в Анапу</a>
+              <p class='card__descr'>
+                <p class='card__descr-item'>
+                  <b class='card__add-info'>Маршрут:</b> Сочи-Лазаревское- Геленджик-Анапа
+                </p>
+                <p class='card__descr-item'>
+                  <b class='card__add-info'>Продолжительность:</b> 10 ч. 0 мин.
+                </p>
+              </p>
+              <p class='card__price'>
+                <b class='card__price--cur'>11 600 руб.</b>
+              </p>
+            </div>
+          </article>
+        </li>
+        <li class='catalog__item'>
+          <article class='card'>
+            <img srcset='
+                img/card4-m.jpg 290w,
+                img/card4-t.jpg 345w,
+                img/card5-d.jpg 555w'
+              sizes='
+                (max-width: 749px) 290px,
+                (max-width: 1139px) 345px,
+                555px
+              ' alt='card__img'  class='card__img' width='290' height='228'>
+            <div class='card__info'>
+              <a class='card__name' href='#'>Морской круиз<br> в Анапу</a>
+              <p class='card__descr'>
+                <p class='card__descr-item'>
+                  <b class='card__add-info'>Маршрут:</b> Сочи-Лазаревское- Геленджик-Анапа
+                </p>
+                <p class='card__descr-item'>
+                  <b class='card__add-info'>Продолжительность:</b> 10 ч. 0 мин.
+                </p>
+              </p>
+              <p class='card__price'>
+                <b class='card__price--cur'>18 999 руб.</b>
+              </p>
+            </div>
+          </article>
+        </li>
+        <li class='catalog__item'>
+          <article class='card'>
+            <img srcset='
+                img/card4-m.jpg 290w,
+                img/card4-t.jpg 345w,
+                img/card5-d.jpg 555w'
+              sizes='
+                (max-width: 749px) 290px,
+                (max-width: 1139px) 345px,
+                555px
+              ' alt='card__img'  class='card__img' width='290' height='228'>
+            <div class='card__info'>
+              <a class='card__name' href='#'>Морской круиз<br> в Анапу</a>
+              <p class='card__descr'>
+                <p class='card__descr-item'>
+                  <b class='card__add-info'>Маршрут:</b> Сочи-Лазаревское- Геленджик-Анапа
+                </p>
+                <p class='card__descr-item'>
+                  <b class='card__add-info'>Продолжительность:</b> 10 ч. 0 мин.
+                </p>
+              </p>
+              <p class='card__price'>
+                <b class='card__price--cur'>6 200 руб.</b>
+              </p>
+            </div>
+          </article>
+        </li>
+        <li class='catalog__item'>
+          <article class='card'>
+            <img srcset='
+                img/card4-m.jpg 290w,
+                img/card4-t.jpg 345w,
+                img/card5-d.jpg 555w'
+              sizes='
+                (max-width: 749px) 290px,
+                (max-width: 1139px) 345px,
+                555px
+              ' alt='card__img'  class='card__img' width='290' height='228'>
+            <div class='card__info'>
+              <a class='card__name' href='#'>Морской круиз<br> в Анапу</a>
+              <p class='card__descr'>
+                <p class='card__descr-item'>
+                  <b class='card__add-info'>Маршрут:</b> Сочи-Лазаревское- Геленджик-Анапа
+                </p>
+                <p class='card__descr-item'>
+                  <b class='card__add-info'>Продолжительность:</b> 10 ч. 0 мин.
+                </p>
+              </p>
+              <p class='card__price'>
+                <b class='card__price--cur'>33 500 руб.</b>
+              </p>
+            </div>
+          </article>
+        </li>
+        <li class='catalog__item'>
+          <article class='card'>
+            <img srcset='
+                img/card4-m.jpg 290w,
+                img/card4-t.jpg 345w,
+                img/card5-d.jpg 555w'
+              sizes='
+                (max-width: 749px) 290px,
+                (max-width: 1139px) 345px,
+                555px
+              ' alt='card__img'  class='card__img' width='290' height='228'>
+            <div class='card__info'>
+              <a class='card__name' href='#'>Морской круиз<br> в Анапу</a>
+              <p class='card__descr'>
+                <p class='card__descr-item'>
+                  <b class='card__add-info'>Маршрут:</b> Сочи-Лазаревское- Геленджик-Анапа
+                </p>
+                <p class='card__descr-item'>
+                  <b class='card__add-info'>Продолжительность:</b> 10 ч. 0 мин.
+                </p>
+              </p>
+              <p class='card__price'>
+                <b class='card__price--cur'>12 800 руб.</b>
+              </p>
+            </div>
+          </article>
+        </li>
+      </ul>
+      <button class='catalog__load-more button button--load-more' type='button'>Больше круизов</button>
+    </section>
+  </main>
+  <footer class='page-footer container wrapper'>
+    <div class='page-footer__wrapper container'>
+      <ul class='page-footer__nav footer-nav default-list'>
+        <li class='footer-nav__item'>
+          <a class='footer-nav__link' href='#'>Вход для партнеров</a>
+        </li>
+        <li class='footer-nav__item'>
+          <a class='footer-nav__link' href='#'>О компании</a>
+        </li>
+        <li class='footer-nav__item'>
+          <a class='footer-nav__link' href='#'>Контакты</a>
+        </li>
+      </ul>
+      <div class='page-footer__socials socials'>
+        <h3 class='socials__headline'>Будь на связи:</h3>
+        <ul class='socials__list default-list'>
+          <li class='socials__item'>
+            <a class='socials__link socials__link--vk' href='#'>vk</a>
+          </li>
+          <li class='socials__item'>
+            <a class='socials__link socials__link--ok' href='#'>ok</a>
+          </li>
+          <li class='socials__item'>
+            <a class='socials__link socials__link--yt' href='#'>youtube</a>
+          </li>
+          <li class='socials__item'>
+            <a class='socials__link socials__link--inst' href='#'>instagram</a>
+          </li>
+        </ul>
+      </div>
+      <div class='page-footer__contacts contacts contacts--footer'>
+        <span class='contacts__number'>8 800 500-61-05</span>
+        <span class='contacts__descr'>Круглосуточная поддержка</span>
+        <p class='contacts__copyright'>© 2016 OOO «Городские Круизы»</p>
+      </div>
+    </div>
+  </footer>
+  <script src='js/script.js'></script>
+</body>
+</html>

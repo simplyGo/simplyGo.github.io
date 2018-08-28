@@ -1,0 +1,166 @@
+.button {
+  display: block;
+  text-decoration: none;
+
+  font-family: 'Roboto', sans-serif;
+
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  opacity: 0.5;
+}
+
+.button:active {
+  opacity: 0.3;
+}
+
+.button--download {
+  position: relative;
+
+  width: 160px;
+  height: 50px;
+  box-sizing: border-box;
+
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: @fontBold;
+  line-height: 40px;
+  color: @black;
+  text-transform: capitalize;
+  text-align: center;
+  vertical-align: middle;
+
+  background: white;
+  background-clip: padding-box;
+
+  border: 5px solid transparent;
+  border-radius: 50px;
+}
+
+.button--download::after {
+  content: '';
+  position: absolute;
+  top: -5px;
+  bottom: -5px;
+  left: -5px;
+  right: -5px;
+
+  z-index: -1;
+
+  background: @gradientBlue2Green;
+  border-radius: 50px;
+}
+
+.button--download:hover::after {
+  opacity: 0.5;
+}
+
+.button--download:hover::after {
+  opacity: 0.3;
+}
+
+.button--slider {
+  position: relative;
+  width: 25px;
+  height: 20px;
+
+  font-size: 0;
+
+  background-color: @white;
+}
+
+.button--slider-left::before,
+.button--slider-right::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  margin-top: -2px;
+  margin-left: -5px;
+  width: 10px;
+  height: 5px;
+  background: url('../img/sprite.png');
+}
+
+.button--slider-left::before {
+  background-position: -39px 0px;
+}
+
+.button--slider-right::before {
+  background-position: -71px 0px;
+}
+
+.button--control {
+  width: 180px;
+  height: 45px;
+
+  font-size: 16px;
+  line-height: 45px;
+  color: @grayText;
+  text-align: center;
+  vertical-align: middle;
+
+  background-color: @white;
+  border: 2px solid @lightGray;
+  border-radius: 25px;
+}
+
+.button--read-more {
+  width: 130px;
+  height: 35px;
+
+  font-size: 12px;
+  line-height: 35px;
+  color: @grayReadMore;
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle;
+
+  background-color: @white;
+  border-radius: 25px;
+}
+
+.button--banner {
+  width: 150px;
+
+  font-size: 12px;
+  line-height: 30px;
+  color: @white;
+  text-align: center;
+  vertical-align: middle;
+
+  border-radius: 25px;
+}
+
+.button--submit {
+  position: relative;
+  // padding-right: 20px;
+  width: 200px;
+  box-sizing: border-box;
+
+  font-size: 18px;
+  font-weight: @fontRegular;
+  line-height: 60px;
+  color: @white;
+  text-align: center;
+  vertical-align: middle;
+
+  background-color: @green;
+  border-radius: 50px;
+}
+
+// .button--submit::after {
+//   content: '';
+//   position: absolute;
+//   top: 20px;
+//   right: 40px;
+//   display: block;
+//   width: 20px;
+//   height: 20px;
+//
+//   background-color: @white;
+// }

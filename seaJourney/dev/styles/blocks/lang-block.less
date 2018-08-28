@@ -1,0 +1,42 @@
+.lang-block {
+  position: relative;
+  font-family: 'Raleway', sans-serif;
+}
+
+.lang-block__list {
+  position: absolute;
+  width: 100%;
+}
+
+.lang-block__item:hover {
+  opacity: 0.5;
+}
+
+.lang-block__button {
+  display: none;
+
+  font-size: 14px;
+  font-weight: @fontRegular;
+
+  user-select: none;
+  cursor: pointer;
+}
+
+#lang-all:checked ~ .lang-block .lang-block__button--this,
+
+#lang-ru:checked ~ .lang-block .lang-block__item--ru .lang-block__button--all,
+#lang-eng:checked ~ .lang-block .lang-block__item--eng .lang-block__button--all {
+  display: block;
+}
+
+#lang-all:checked ~ .lang-block .lang-block__list {
+  color: @white;
+  background-color: @blue;
+  box-shadow: 0 3px 5px 0 @darkBlue;
+}
+
+#lang-all:checked ~ .lang-block .lang-block__item {
+  padding: 5px;
+
+  border-bottom: 1px solid @darkBlue;
+}

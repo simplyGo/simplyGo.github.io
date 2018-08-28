@@ -1,0 +1,31 @@
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-nav__item {
+  position: relative;
+  display: block;
+  padding: 0 10px;
+
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-weight: @fontMedium;
+  line-height: 60px;
+  color: @black;
+  text-decoration: none;
+}
+
+.main-nav__item--active::before {
+  content: '';
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+
+  display: block;
+  width: 5px;
+  height: 5px;
+
+  background-color: @green;
+  border-radius: 50%;
+}

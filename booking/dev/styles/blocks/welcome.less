@@ -1,0 +1,54 @@
+.welcome {
+  position: relative;
+
+  background: url('../img/header.jpg') no-repeat;
+  background-size: cover;
+}
+
+.welcome__background {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  background: @blueBronzeGradient;
+  opacity: 0.65;
+}
+
+.welcome__wrapper {
+  position: relative;
+  z-index: 10;
+  display: table-cell;
+
+  text-align: center;
+  vertical-align: middle;
+}
+
+.welcome__headline,
+.welcome__explore,
+.welcome__form {
+  display: block;
+  margin: 0 auto; // временно
+}
+
+.welcome__headline {
+  margin: 45px auto;
+  max-width: 730px;
+
+  font-family: 'Gilda Display', serif;
+  font-weight: normal;
+  font-size: 81px;
+  color: @white;
+  text-align: center;
+}
+
+.welcome__explore {
+  margin: 45px auto;
+  margin-bottom: 100px;
+}
+
+.welcome__form {
+
+}

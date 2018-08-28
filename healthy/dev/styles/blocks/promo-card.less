@@ -1,0 +1,88 @@
+.promo-card {
+  position: relative;
+  padding: 35px 20px;
+  // padding-top: 215px;
+
+  font-family: 'Roboto', sans-serif;
+  color: @grayHeadline;
+  border: 2px solid @grayDecorLines;
+  border-radius: 25px;
+}
+
+.promo-card:hover {
+  border-color: @green;
+}
+
+.promo-card::after {
+  content: '';
+  position: absolute;
+  top: 175px;
+  left: 50%;
+
+  display: block;
+  margin-left: -20px;
+  width: 40px;
+  height: 2px;
+
+  background-color: @grayDecorLines;
+}
+
+.promo-card__decor {
+  // content: '';
+  // position: absolute;
+  // top: 35px;
+  // left: 50%;
+  // display: block;
+  // margin-left: -73px;
+  margin-bottom: 80px;
+  width: 140px;
+  height: 130px;
+
+  background: url('../img/promo-icons.jpg') no-repeat;
+}
+
+.promo-card__name {
+  display: block;
+  margin-bottom: 10px;
+
+  font-size: 18px;
+  font-weight: @fontLight;
+  text-align: center;
+}
+
+.promo-card__name b {
+  font-weight: @fontBlack;
+}
+
+.promo-card__count {
+  display: block;
+
+  font-size: 13px;
+  font-weight: @fontRegularItalic;
+  color: @price;
+  text-align: center;
+}
+
+.promo-card--one .promo-card__decor {
+  background-position: 0px 0px;
+}
+
+.promo-card--two .promo-card__decor {
+  background-position: -200px 0px;
+}
+
+.promo-card--three .promo-card__decor {
+  background-position: -400px 0px;
+}
+
+.promo-card--four .promo-card__decor {
+  background-position: -600px 0px;
+}
+
+.promo-card--five .promo-card__decor {
+  background-position: -800px 0px;
+}
+
+.promo-card--six .promo-card__decor {
+  background-position: -1000px 0px;
+}

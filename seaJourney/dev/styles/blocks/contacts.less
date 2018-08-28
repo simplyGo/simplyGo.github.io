@@ -1,0 +1,49 @@
+.contacts {
+  font-family: 'Raleway', sans-serif;
+  color: @darkBlue;
+}
+
+.contacts__number,
+.contacts__descr {
+  display: block;
+}
+
+.contacts__number {
+  font-size: 14px;
+  font-weight: @fontBold;
+}
+
+.contacts__descr {
+  font-size: 10px;
+  font-weight: @fontRegular;
+}
+
+.contacts--footer .contacts__number {
+  margin-bottom: 10px;
+
+  text-align: center;
+}
+
+.contacts--footer .contacts__descr {
+  margin-bottom: 10px;
+
+  text-align: center;
+}
+
+.contacts--footer .contacts__copyright {
+  font-size: 14px;
+  font-weight: @fontRegular;
+  text-align: center;
+}
+
+@media (min-width: @tabletWidthMin) {
+  .contacts__number {
+    margin-bottom: 5px;
+  }
+
+  .contacts--footer .contacts__number,
+  .contacts--footer .contacts__descr,
+  .contacts--footer .contacts__copyright {
+    text-align: left;
+  }
+}

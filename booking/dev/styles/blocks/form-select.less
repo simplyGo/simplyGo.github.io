@@ -1,0 +1,61 @@
+.form-select {
+  padding: 25px 0;
+
+  color: @lightGray2;
+  background-color: @white;
+}
+
+.form-select__name {
+  display: block;
+
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
+
+.form-select__number,
+.form-select__type {
+  display: block;
+  padding: 0;
+
+  text-align: center;
+  border: none;
+  appearance: textfield;
+}
+
+.form-select__number::-webkit-inner-spin-button {
+  appearance: textfield;
+}
+
+.form-select__number:focus,
+.form-select__number:not(:focus),
+.form-select__type:focus,
+.form-select__type:not(:focus) {
+  color: @lightGray2;
+}
+
+.form-select__number {
+  margin: 20px auto;
+
+  width: 100px;
+  height: 80px;
+
+  font-size: 89px;
+}
+
+.form-select__type {
+  display: block;
+  margin: 0 auto;
+  height: 30px;
+
+  font-size: 24px;
+  text-transform: uppercase;
+  outline: none;
+}
+
+.form-select__type--month {
+  width: 45px;
+}
+
+.form-select__type--guests {
+  width: 40px;
+}

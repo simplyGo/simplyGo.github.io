@@ -1,0 +1,141 @@
+.social__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social__logo-image {
+  width: 70px;
+  height: 40px;
+}
+
+.social__logo-image:hover {
+  opacity: 0.5;
+}
+
+.social__logo-image:active {
+  opacity: 0.3;
+}
+
+.social__link {
+  display: block;
+
+  width: 30px;
+  height: 26px;
+
+  font-size: 0;
+  text-decoration: none;
+
+  background: url(../img/icons.png);
+}
+
+.social__link--vk {
+  background-position: 0 -19px;
+}
+
+.social__link--insta {
+  background-position: -40px -19px;
+}
+
+.social__link--fb {
+  background-position: -70px -19px;
+}
+
+.social__link:hover {
+  opacity: @opacityHover;
+}
+
+.social__link:active {
+  opacity: @opacityActive;
+}
+
+.social--footer .social__logo {
+  display: block;
+
+  margin: 0 auto;
+  width: 80px;
+  height: 50px;
+}
+
+.social--footer .social__wrapper {
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+
+.social--footer .social__link {
+  margin: 0;
+}
+
+@media (min-width: @tabs_width) {
+  .social__link {
+    width: 37px;
+    height: 37px;
+  }
+
+  .social__link--vk {
+    background-position: 0 -50px;
+  }
+
+  .social__link--insta {
+    background-position: -48px -50px;
+  }
+
+  .social__link--fb {
+    background-position: -88px -50px;
+  }
+
+  .social--footer {
+    width: 145px;
+    height: 100px;
+  }
+
+  .social--footer .social__logo {
+    width: 70px;
+    height: 40px;
+  }
+
+  .social--footer .social__wrapper {
+    margin: 0;
+    margin-top: 40px;
+  }
+
+  .social--footer .social__link {
+    width: 30px;
+    height: 26px;
+  }
+
+  .social--footer .social__link--vk {
+    background-position: 0 -19px;
+  }
+
+  .social--footer .social__link--insta {
+    background-position: -40px -19px;
+  }
+
+  .social--footer .social__link--fb {
+    background-position: -70px -19px;
+  }
+}
+
+@media (min-width: @desktop_width) {
+  .social__link {
+    width: 14px;
+    height: 14px;
+  }
+
+  .social__link--vk {
+    background-position: 0 0;
+  }
+
+  .social__link--insta {
+    background-position: -24px 0;
+  }
+
+  .social__link--fb {
+    background-position: -45px 0;
+  }
+
+  .social--footer .social__logo {
+    width: 85px;
+    height: 40px;
+  }
+}

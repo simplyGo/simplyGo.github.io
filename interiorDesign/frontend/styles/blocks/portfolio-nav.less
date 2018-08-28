@@ -1,0 +1,96 @@
+.portfolio-nav {
+  display: flex;
+  flex-direction: column;
+
+  margin: 0;
+  margin-bottom: 15px;
+  padding: 0;
+
+  list-style: none;
+}
+
+.portfolio-nav__item {
+  margin: 15px 0;
+}
+
+.portfolio-nav__category {
+  margin: 0;
+  padding: 15px 0;
+
+  font-size: 22px;
+  font-size: @fontWeightNormal;
+  color: @paragText;
+  text-decoration: none;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.portfolio-nav__control {
+  display: none;
+}
+
+#portfolio-nav__show-all-types:checked ~ .portfolio__head .portfolio-nav__category--all-types,
+#portfolio-nav__show-interior:checked ~ .portfolio__head .portfolio-nav__category--interior,
+#portfolio-nav__show-decoration:checked ~ .portfolio__head .portfolio-nav__category--decoration {
+  font-weight: @fontWeightSemiBold;
+  color: @headText;
+}
+
+#portfolio-nav__show-all-types:checked ~ .portfolio__slider .portfolio-slider__slide,
+#portfolio-nav__show-interior:checked ~ .portfolio__slider .portfolio-slider__type--interior,
+#portfolio-nav__show-decoration:checked ~ .portfolio__slider .portfolio-slider__type--decoration {
+  display: inline-block;
+}
+
+@media (min-width: @tabs_width) {
+  .portfolio-nav {
+    flex-direction: row;
+    justify-content: space-between;
+
+    margin-bottom: 5px;
+  }
+
+  .portfolio-nav__category {
+    position: relative;
+
+    margin: 30px 0;
+
+    font-size: 22px;
+  }
+}
+
+@media (min-width: @desktop_width) {
+  .portfolio-nav {
+    margin-bottom: 50px;
+  }
+
+  .portfolio-nav__category::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    display: block;
+    width: 100%;
+    height: 1px;
+
+    font-size: 18px;
+
+    background-color: @headText;
+    transition: all 0.5s;
+    opacity: 0;
+  }
+
+  #portfolio-nav__show-all-types:checked ~ .portfolio__head .portfolio-nav__category--all-types::before,
+  #portfolio-nav__show-interior:checked ~ .portfolio__head .portfolio-nav__category--interior::before,
+  #portfolio-nav__show-decoration:checked ~ .portfolio__head .portfolio-nav__category--decoration::before {
+    content: '';
+    opacity: 1;
+  }
+
+  #portfolio-nav__show-all-types:checked ~ .portfolio__slider .portfolio-slider__slide,
+  #portfolio-nav__show-interior:checked ~ .portfolio__slider .portfolio-slider__type--interior,
+  #portfolio-nav__show-decoration:checked ~ .portfolio__slider .portfolio-slider__type--decoration {
+    display: block;
+  }
+}

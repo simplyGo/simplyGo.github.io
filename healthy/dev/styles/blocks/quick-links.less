@@ -1,0 +1,74 @@
+.quick-links {
+  position: relative;
+
+  font-family: 'Roboto', sans-serif;
+}
+
+.quick-links:first-of-type {
+  margin-right: 35px;
+}
+
+.quick-links::before {
+  content: '';
+  position: absolute;
+  top: 50px;
+  left: 0;
+  display: block;
+  width: 30px;
+  height: 2px;
+
+  background-color: @green;
+}
+
+.quick-links__headline {
+  margin: 0;
+  margin-top: 5px;
+  margin-bottom: 85px;
+
+  font-size: 18px;
+  font-weight: @fontRegular;
+  color: @grayHeadline;
+}
+
+.quick-links__headline b {
+  font-weight: @fontBlack;
+}
+
+.quick-links__item {
+  margin-bottom: 10px;
+}
+
+.quick-links__link {
+  position: relative;
+  display: block;
+  padding-left: 25px;
+
+  font-size: 15px;
+  font-weight: @fontRegular;
+  line-height: 24px;
+  color: @grayHeadline;
+  text-transform: lowercase;
+  text-decoration: none;
+}
+
+.quick-links__link::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  display: block;
+  margin-top: -6px;
+  width: 13px;
+  height: 13px;
+
+  background: url('../img/sprite.png') no-repeat;
+  background-position: 0px -87px;
+}
+
+.quick-links__link:hover {
+  opacity: 0.5;
+}
+
+.quick-links__link:active {
+  opacity: 0.3;
+}

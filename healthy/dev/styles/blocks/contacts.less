@@ -1,0 +1,81 @@
+.contacts {
+  position: relative;
+  padding-top: 90px;
+
+  font-family: 'Roboto', sans-serif;
+}
+
+.contacts::before {
+  content: '';
+  position: absolute;
+  top: 50px;
+  left: 0;
+  display: block;
+  width: 30px;
+  height: 2px;
+
+  background-color: @green;
+}
+
+.contacts__logo-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+}
+
+.contacts__descr {
+  margin-bottom: 20px;
+
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  font-weight: @fontRegular;
+  line-height: 21px;
+  color: @grayHeadline;
+}
+
+.contacts__item {
+  position: relative;
+  margin-bottom: 10px;
+  padding-left: 35px;
+}
+
+.contacts__item-text::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  display: block;
+  margin-top: -6px;
+  width: 13px;
+  height: 13px;
+
+  background: url('../img/sprite.png') no-repeat;
+}
+
+.contacts__item-text {
+  font-size: 15px;
+  font-weight: @fontRegular;
+  color: @grayHeadline;
+  text-decoration: none;
+}
+
+.contacts__item-text b {
+  font-weight: @fontBold;
+}
+
+.contacts__item-text--website {
+  font-weight: @fontBold;
+  color: @green;
+}
+
+.contacts__item-text--address::before {
+  background-position: 0px -9px;
+}
+
+.contacts__item-text--email::before {
+  background-position: 0px -36px;
+}
+
+.contacts__item-text--website::before {
+  background-position: 0px -63px;
+}

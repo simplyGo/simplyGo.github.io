@@ -1,0 +1,239 @@
+.portfolio-slider {
+  position: relative;
+  padding: 0 4%;
+  width: 100%;
+  box-sizing: border-box;
+
+  overflow: hidden;
+}
+
+.portfolio-slider__button {
+  position: absolute;
+}
+
+.portfolio-slider__slider {
+  position: relative;
+  left: -84%; //~88% step
+
+  margin: 0;
+  // margin-left: 4%;
+  padding: 0;
+
+  white-space: nowrap;
+  list-style: none;
+}
+
+.portfolio-slider__slide {
+  display: none;
+
+  margin: 0 2%;
+  margin-bottom: 20px;
+  width: 84%;
+}
+
+.portfolio-slider__color-env {
+  position: relative;
+  top: -30px;
+  height: 530px;
+  background: @blue;
+}
+
+.portfolio-slider__image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 25px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.2;
+}
+
+.portfolio-slider__type--interior .portfolio-slider__image {
+  background-image: url('../img/slider-image1.jpg');
+}
+
+.portfolio-slider__type--decoration .portfolio-slider__image {
+  background-image: url('../img/slider-image2.jpg');
+}
+
+.portfolio-slider__more-button {
+  display: none;
+}
+
+.portfolio-slider__caption {
+  margin: 0;
+
+  font-size: 18px;
+  font-weight: @fontWeightSemiBold;
+  color: @headText;
+  text-align: center;
+}
+
+.portfolio-slider__type {
+  display: none;
+}
+
+.portfolio-slider__slide--active .portfolio-slider__color-env {
+  background: none;
+}
+
+.portfolio-slider__slide--active .portfolio-slider__image {
+  opacity: 1;
+}
+
+@media (min-width: @tabs_width) {
+  .portfolio-slider__slide {
+    margin-bottom: 70px;
+  }
+
+  .portfolio-slider__color-env {
+    height: 610px;
+  }
+
+  .portfolio-slider__caption {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: @desktop_width) {
+  .portfolio-slider {
+    margin: 0 95px;
+    padding: 0;
+
+    width: auto;
+    box-sizing: border-box;
+  }
+
+  .portfolio-slider__slider {
+    display: flex;
+    flex-wrap: nowrap;
+    left: 0; // step is 25%
+
+    width: 100%;
+    white-space: normal;
+  }
+
+  .portfolio-slider__slide {
+    flex-shrink: 0;
+    position: relative;
+    margin: 0;
+
+    width: 25%;
+
+    transition: all 0.5s;
+    cursor: default;
+  }
+
+  .portfolio-slider__image {
+    margin: 0;
+
+    transition: all 0.5s;
+  }
+
+  .portfolio-slider__more-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    margin-top: -42px;
+    margin-left: -42px;
+
+    width: 84px;
+    height: 84px;
+
+    font-size: 0;
+
+    background-color: @orange;
+    border-radius: 50%;
+
+    opacity: 0;
+    transition: all 0.5s;
+    cursor: pointer;
+  }
+
+  .portfolio-slider__more-button::before,
+  .portfolio-slider__more-button::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    display: block;
+    margin-top: -2px;
+    margin-left: -2px;
+
+    width: 2px;
+    height: 2px;
+
+    background-color: @whiteText;
+  }
+
+  .portfolio-slider__more-button::before {
+    margin-left: -14px;
+    width: 28px;
+  }
+
+  .portfolio-slider__more-button::after {
+    margin-top: -14px;
+    height: 28px;
+  }
+
+  .portfolio-slider__caption {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+
+    width: 155px;
+    font-size: 16px;
+    color: @whiteText;
+    text-align: left;
+  }
+
+  .portfolio-slider__type {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+
+    display: block;
+
+    font-size: 14px;
+    font-weight: @fontWeightNormal;
+    color: @whiteText;
+    transform: rotate(-90deg);
+    transform-origin: top left;
+  }
+
+  .portfolio-slider__slide--active .portfolio-slider__color-env {
+    background: @blue;
+  }
+
+  .portfolio-slider__slide--active .portfolio-slider__image {
+    opacity: 0.2;
+  }
+
+  // animation
+  .portfolio-slider__slider:hover .portfolio-slider__slide {
+    width: 20%;
+  }
+
+  .portfolio-slider__slider:hover .portfolio-slider__slide:hover {
+    width: 40%;
+  }
+
+  .portfolio-slider__slide:hover .portfolio-slider__image {
+    background-color: @formFawn; // временно
+    opacity: 1;
+  }
+
+  .portfolio-slider__slide:hover .portfolio-slider__more-button {
+    display: block;
+    opacity: 1;
+  }
+
+  .portfolio-slider__slide:hover .portfolio-slider__caption,
+  .portfolio-slider__slide:hover .portfolio-slider__type--interior {
+    display: none;
+  }
+}

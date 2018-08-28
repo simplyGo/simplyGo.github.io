@@ -1,0 +1,87 @@
+.special {
+  font-family: 'Roboto', sans-serif;
+}
+
+.special__head {
+  display: flex;
+  justify-content: center;
+
+  margin: 0 auto;
+  margin-bottom: 45px;
+
+  color: @grayHeadline;
+}
+
+.special__logo {
+  position: relative;
+  top: -40px;
+  display: block;
+  margin: 0 20px;
+  width: 196px;
+  height: 130px;
+
+  background: url('../img/decor-logo.png') no-repeat;
+  background-size: cover;
+}
+
+.special__logo::after {
+  content: '';
+  position: absolute;
+  bottom: -35px;
+  left: 10px;
+  right: 10px;
+
+  display: block;
+  height: 2px;
+
+  background-color: @green;
+}
+
+.special__headlines {
+  order: -1;
+  display: flex;
+  flex-direction: column;
+  width: 420px;
+  text-align: right;
+}
+
+.special__headline {
+  display: block;
+  margin: 0;
+  margin-bottom: 20px;
+
+  font-size: 12px;
+  font-weight: @fontMedium;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.special__subline {
+  margin: 0;
+
+  font-size: 40px;
+  font-weight: @fontLight;
+  text-align: center;
+}
+
+.special__subline b {
+  font-weight: @fontBlack;
+}
+
+.special__text {
+  margin: 0;
+  width: 420px;
+
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  font-weight: @fontRegular;
+  line-height: 25px;
+}
+
+.special__timer {
+  margin-bottom: 50px;
+}
+
+.special__cards {
+
+}

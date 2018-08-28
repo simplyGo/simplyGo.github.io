@@ -1,0 +1,50 @@
+.photos {
+  position: relative;
+
+  font-family: 'Roboto', sans-serif;
+}
+
+.photos::before {
+  content: '';
+  position: absolute;
+  top: 50px;
+  left: 0;
+  display: block;
+  width: 30px;
+  height: 2px;
+
+  background-color: @green;
+}
+
+.photos__headline {
+  margin: 0;
+  margin-top: 5px;
+  margin-bottom: 85px;
+
+  font-size: 18px;
+  font-weight: @fontRegular;
+  color: @grayHeadline;
+}
+
+.photos__headline b {
+  font-weight: @fontBlack;
+}
+
+.photos__gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  width: 270px;
+}
+
+.photos__item {
+  flex-shrink: 0;
+  margin-bottom: 20px;
+}
+
+.photos__photo {
+  display: block;
+  width: 80px;
+  height: 80px;
+}
